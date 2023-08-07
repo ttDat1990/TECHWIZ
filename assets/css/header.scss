@@ -382,7 +382,7 @@
 //picture animation
 .container {
     width: 100%;
-    height: 1000px;
+    height: 2000px;
 
 }
 
@@ -404,7 +404,16 @@
     z-index: -1;
 }
 
-.img1 {
+@media (prefers-reduced-motion: no-preference) {
+    .img1 {
+        animation: fadeInTopRight;
+        animation-duration: 1.5s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+}
+
+.pic1 {
     position: absolute;
     border-radius: 25px;
     border: 10px solid #e0e2e9;
@@ -414,14 +423,20 @@
     padding: 20px;
     width: 200px;
     height: 350px;
-    animation: fadeInTopRight;
-    animation-duration: 1.5s;
-    opacity: 0;
-    animation-fill-mode: forwards;
     right: 0;
+    opacity: 0;
 }
 
-.img2 {
+@media (prefers-reduced-motion: no-preference) {
+    .img2 {
+        animation: fadeInTopRight;
+        animation-duration: 1.5s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.pic2 {
     position: absolute;
     top: 50px;
     right: 50px;
@@ -434,18 +449,23 @@
     width: 200px;
     height: 350px;
     opacity: 0;
-    animation: fadeInTopRight;
-    animation-duration: 1.5s;
-    animation-delay: .5s;
-    animation-fill-mode: forwards;
 }
 
-.img3 {
+
+@media (prefers-reduced-motion: no-preference) {
+    .img3 {
+        animation: fadeInTopRight;
+        animation-duration: 1.5s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.pic3 {
     position: absolute;
     top: 100px;
     right: 100px;
     border-radius: 25px;
-    opacity: 0;
     border: 10px solid #e0e2e9;
     background: url(../images/pic3.jpg);
     background-size: cover;
@@ -453,18 +473,16 @@
     padding: 20px;
     width: 200px;
     height: 350px;
-    animation: fadeInTopRight;
-    animation-duration: 1.5s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 // silder effect
 .slider {
     overflow: hidden;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     position: relative;
+
 }
 
 .slider .slide {
@@ -473,18 +491,34 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-size:auto;
+    background-size: cover;
     background-position: center;
     animation: slide 12s infinite; //30s
 }
 
+.slider1 {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: transparent;
+}
+
+.slider1 .slide1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: slide 12s infinite; //30s
+    background-color: transparent;
+}
 
 .title-1 {
     position: absolute;
-    top: 170px;
-    left: 325px;
+    top: 10%;
+    left: 0%;
     z-index: 2;
-
 }
 
 .header-title {
@@ -537,6 +571,14 @@
 
 .slider .slide:nth-child(2) {
     background-image: url('../images/pic5.jpg');
+    animation-delay: -6s;
+}
+
+.slider1 .slide1:nth-child(1) {
+    animation-delay: -0;
+}
+
+.slider1 .slide1:nth-child(2) {
     animation-delay: -6s;
 }
 
@@ -630,7 +672,6 @@
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-
     transform: rotate(90deg);
 }
 
@@ -670,4 +711,28 @@
 #button.show {
     opacity: 1;
     visibility: visible;
+}
+
+//test animation on screen
+@keyframes wipe-enter {
+    0% {
+        transform: scale(0, .025);
+    }
+
+    50% {
+        transform: scale(1, .025);
+    }
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background: orange;
+    // etc...
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .square-animation {
+        animation: wipe-enter 1s 1;
+    }
 }
