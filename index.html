@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/listItem.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,9 +69,36 @@
                                     class="fa-regular fa-address-card me-2"></i>Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="navbar-link text-white"><i class="far fa-user me-2"></i>Login</a>
+                            <a href="#" id="modal-login" class="navbar-link text-white"><i class="far fa-user me-2"></i>Login</a>
                         </li>
                     </ul>
+                  
+                    <!-- Login Modal -->
+                    <div id="modal-container">
+                        <div class="modal-background">
+                            <div class="modal">
+                                <h2>Login Form</h2>
+                                <button id="register" style="font-size: 2rem;">to Register</button>
+                                <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                                    preserveAspectRatio="none">
+                                    <rect x="0" y="0" fill="none" width="500" height="400"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal-container1">
+                        <div class="modal-background">
+                            <div class="modal">
+                                <h2>Register Form</h2>
+                                <button id="login" style="font-size: 2rem;">to Login</button>
+                                <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                                    preserveAspectRatio="none">
+                                    <rect x="0" y="0" fill="none" width="500" height="400"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Top social -->
                     <ul class="d-flex">
@@ -265,7 +293,7 @@
     </div>
 
     <!-- Back Top-->
-    <a id="button"></a>
+    <a id="backtop-button"></a>
 
     <!-- Content -->
     <div class="container">
@@ -276,92 +304,55 @@
                 <div class="pic3"></div>
             </div>
         </div>
+        <!-- List Card -->
+        <div class="card-container grid">
+            <a href="#" class="card" id="card">
+                <d class="card-image">
+                    <img src="./assets/images/card1.jpg" alt="card1 image">
+                </d iv>
+                <div class="card-img-overlay">
+                    <h4 class="card-logo">Logo</h4>
+                    <div class="card-content">
+                        <h5 class="card-content-title">The missing link</h5>
+                        <p class="card-content-des">Small things that make difference</p>
+                    </div>
+                </div>
+            </a>
+           
+            <a href="#" class="card" id="card1">
+                <div class="card-image">
+                    <img src="./assets/images/card1.jpg" alt="card1 image">
+                </div>
+                <div class="card-img-overlay">
+                    <h4 class="card-logo">Logo</h4>
+                    <div class="card-content">
+                        <h5 class="card-content-title">The missing link</h5>
+                        <p class="card-content-des">Small things that make difference</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="card" id="card2">
+                <div class="card-image">
+                    <img src="./assets/images/card1.jpg" alt="card1 image">
+                </div>
+                <div class="card-img-overlay">
+                    <h4 class="card-logo">Logo</h4>
+                    <div class="card-content">
+                        <h5 class="card-content-title">The missing link</h5>
+                        <p class="card-content-des">Small things that make difference</p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 
-    <div class="square-wrapper">
-        <div class="square"></div>
-    </div>
 
-
+    
 
     <footer class="footer"></footer>
 
-    <!-- Silder Text Animation-->
-    <script>
-        var element1 = document.getElementsByClassName("text-1");
-        setTimeout(() => {
-            for (let i = 0; i < element1.length; i++) {
-                element1[i].classList.add("text-transparent");
-            }
-        }, 5500)
-        setInterval(function () {
-
-            for (let i = 0; i < element1.length; i++) {
-                element1[i].classList.remove("text-transparent")
-
-                element1[i].classList.remove("animate__animated", "animate__fadeInUp");
-
-
-                void element1[i].offsetWidth;
-
-                element1[i].classList.add("animate__animated", "animate__fadeInUp");
-            }
-            setTimeout(() => {
-                for (let i = 0; i < element1.length; i++) {
-                    element1[i].classList.add("text-transparent");
-                }
-            }, 5500)
-        }, 6000);     
-    </script>
-
-    <!-- Go Up Button -->
-    <script>
-        var btn = $('#button');
-
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
-
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({ scrollTop: 0 }, '300');
-        });
-    </script>
-
-    <!-- Animation trigger on scroll -->
-    <script>
-        const options = {
-            rootMargin: '100px',
-            threshold: 0
-        };
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                const square1 = entry.target.querySelector('.pic1');
-                const square2 = entry.target.querySelector('.pic2');
-                const square3 = entry.target.querySelector('.pic3');
-
-                if (entry.isIntersecting) {
-                    square1.classList.add('img1');
-                    square2.classList.add('img2');
-                    square3.classList.add('img3');
-                    return; // if we added the class, exit the function
-                }
-
-                // We're not intersecting, so remove the class!
-                square1.classList.remove('img1');
-                square2.classList.remove('img2');
-                square3.classList.remove('img3');
-            });
-        }, options);
-
-        observer.observe(document.querySelector('.wrapper'));
-
-    </script>
-
+    <!-- Custom JS -->
+    <script src="./assets/js/js.js"></script>
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/4bd94a499f.js" crossorigin="anonymous"></script>
 </body>

@@ -4,7 +4,7 @@
   --text-color: #333;
   --nav-color: #fff;
   --primary-color: #ea110c;
-  --background-color-default:#ffffff;
+  --background-color-default: #ffffff;
   --border-radius-default: 0;
   --btn-hover-background-color: #ea110c;
   --font-size-normal: 1.5rem;
@@ -23,6 +23,10 @@ html {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   background-color: var(--white-color);
+}
+
+body.modal-active {
+  overflow: hidden;
 }
 
 .grid {
