@@ -47,34 +47,44 @@ btn.on('click', function (e) {
 // Animation trigger on scroll
 
 const options = {
-    rootMargin: '300px',
+    rootMargin: '100px',
     threshold: 0.5
 };
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        const card = entry.target.querySelector('#card');
-
 
         if (entry.isIntersecting) {
-
-            card.classList.add('animate__fadeInLeft', 'animate__animated');
-            card1.classList.add('animate__fadeInDown', 'animate__animated');
-            card2.classList.add('animate__fadeInRight', 'animate__animated');
-
+            document.getElementById("card").classList.add('animate__fadeInDown', 'animate__animated');
+            document.getElementById("card1").classList.add('animate__fadeInDown', 'animate__animated', 'animate__delay-1s');
+            document.getElementById("card2").classList.add('animate__fadeInDown', 'animate__animated', 'animate__delay-2s');
             return;
         }
+        document.getElementById("card").classList.remove('animate__fadeInDown', 'animate__animated');
+        document.getElementById("card1").classList.remove('animate__fadeInDown', 'animate__animated');
+        document.getElementById("card2").classList.remove('animate__fadeInDown', 'animate__animated');
+    });
+}, options);
 
-        card.classList.remove('animate__fadeInLeft', 'animate__animated');
-        card1.classList.remove('animate__fadeInDown', 'animate__animated');
-        card2.classList.remove('animate__fadeInRight', 'animate__animated');
+const observer1 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
 
+        if (entry.isIntersecting) {
+            document.getElementById("card3").classList.add('animate__fadeInDown', 'animate__animated');
+            document.getElementById("card4").classList.add('animate__fadeInDown', 'animate__animated', 'animate__delay-1s');
+            document.getElementById("card5").classList.add('animate__fadeInDown', 'animate__animated', 'animate__delay-2s');
+            return;
+        }
+        document.getElementById("card3").classList.remove('animate__fadeInDown', 'animate__animated');
+        document.getElementById("card4").classList.remove('animate__fadeInDown', 'animate__animated');
+        document.getElementById("card5").classList.remove('animate__fadeInDown', 'animate__animated');
     });
 }, options);
 
 observer.observe(document.querySelector('.card-container'));
+observer1.observe(document.querySelector('.card-container1'));
 
-//Modal Login
+//Modal Login-Register
 $('#modal-login').click(function () {
     $('#modal-container').removeAttr('class').addClass('modal-login');
     $('#modal-container1').removeAttr('class');
@@ -82,37 +92,64 @@ $('#modal-login').click(function () {
 });
 
 $('#modal-container').click(function (event) {
-    
-    if(!$(event.target).closest('.modal').length && !$(event.target).is('.modal')) {
+
+    if (!$(event.target).closest('.modal').length && !$(event.target).is('.modal')) {
         $(this).addClass('out');
-    $('body').removeClass('modal-active');
+        $('body').removeClass('modal-active');
     }
 });
 
 $('#modal-container1').click(function (event) {
-    
-    if(!$(event.target).closest('.modal').length && !$(event.target).is('.modal')) {
+
+    if (!$(event.target).closest('.modal').length && !$(event.target).is('.modal')) {
         $(this).addClass('out');
-    $('body').removeClass('modal-active');
+        $('body').removeClass('modal-active');
     }
 });
 
-$('#register').click(function () {   
+$('#register').click(function () {
     $('#modal-container').addClass('out');
     $('body').removeClass('modal-active');
 
     $('#modal-container1').removeAttr('class').addClass('modal-register');
     $('body').addClass('modal-active');
 
-    
+
 });
 
-$('#login').click(function () {   
+$('#login').click(function () {
     $('#modal-container1').addClass('out');
     $('body').removeClass('modal-active');
 
     $('#modal-container').removeAttr('class').addClass('modal-login');
     $('body').addClass('modal-active');
 
-    
+
 });
+
+//Sticky Navbar auto hidden
+(function () {
+    var $win = $(window), 
+        box = $(document),
+        navCon = $('.main-nav-container'),
+        postEnd = 0;
+
+    box.on('scroll', function () {
+        var posStart = $(this).scrollTop();
+
+        if (posStart > postEnd) {
+            navCon.addClass('hidden');
+            navCon.removeClass('offset-nav');
+        }
+        else {           
+            if ($win.scrollTop() == 0) {
+                navCon.removeClass('hidden');
+                navCon.removeClass('offset-nav');
+            } else{
+                navCon.removeClass('hidden');
+                navCon.addClass('offset-nav');
+            }
+        }
+        postEnd = posStart;
+    });
+})();

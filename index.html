@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/listItem.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,90 +32,94 @@
         <div class="slide bg-overlay"></div>
 
         <!-- Header -->
-        <header class="grid">
-
-            <!-- Navbar Top -->
-            <div class="d-flex-space">
-
-                <!-- Navbar top Left-->
-                <div>
-                    <ul class="d-flex">
-                        <li class="nav-item mx-0">
-                            <span class="text-white"><i class="far fa-clock me-2"></i>Visit time:
-                                Mon-Sat 9:00-19:00</span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="navbar-link text-white" href="#"><i class="fas fa-headset me-2"></i>Call
-                                us now: +135-869-328</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Navbar top Right-->
-                <div class="d-flex">
-
-                    <!-- Language -->
-                    <div class="dropdown nav-item">
-                        <a class="navbar-link text-white" href="#"><i class="fa-solid fa-language me-2"></i>Language</a>
-                        <ul class="dropdown-menu dropdown-language">
-                            <li class="dropdown-item" href="#">Vietnamese</li>
-                            <li class="dropdown-item" href="#">English</li>
+        <div class="top-nav-container" >
+            <div class="grid"> 
+                <!-- Navbar Top -->
+                <div class="d-flex-space">
+    
+                    <!-- Navbar top Left-->
+                    <div>
+                        <ul class="d-flex">
+                            <li class="nav-item mx-0">
+                                <span class="text-white"><i class="far fa-clock me-2"></i>Visit time:
+                                    Mon-Sat 9:00-19:00</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-link text-white" href="#"><i class="fas fa-headset me-2"></i>Call
+                                    us now: +135-869-328</a>
+                            </li>
                         </ul>
                     </div>
-
-                    <!-- Top link -->
-                    <ul class="d-flex">
-                        <li class="nav-item">
-                            <a href="#" class="navbar-link text-white"><i
-                                    class="fa-regular fa-address-card me-2"></i>Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" id="modal-login" class="navbar-link text-white"><i class="far fa-user me-2"></i>Login</a>
-                        </li>
-                    </ul>
-                  
-                    <!-- Login Modal -->
-                    <div id="modal-container">
-                        <div class="modal-background">
-                            <div class="modal">
-                                <h2>Login Form</h2>
-                                <button id="register" style="font-size: 2rem;">to Register</button>
-                                <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
-                                    preserveAspectRatio="none">
-                                    <rect x="0" y="0" fill="none" width="500" height="400"></rect>
-                                </svg>
+    
+                    <!-- Navbar top Right-->
+                    <div class="d-flex">
+    
+                        <!-- Language -->
+                        <div class="dropdown nav-item">
+                            <a class="navbar-link text-white" href="#"><i class="fa-solid fa-language me-2"></i>Language</a>
+                            <ul class="dropdown-menu dropdown-language">
+                                <li class="dropdown-item" href="#">Vietnamese</li>
+                                <li class="dropdown-item" href="#">English</li>
+                            </ul>
+                        </div>
+    
+                        <!-- Top link -->
+                        <ul class="d-flex">
+                            <li class="nav-item">
+                                <a href="#" class="navbar-link text-white"><i
+                                        class="fa-regular fa-address-card me-2"></i>Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" id="modal-login" class="navbar-link text-white"><i
+                                        class="far fa-user me-2"></i>Login</a>
+                            </li>
+                        </ul>
+    
+                        <!-- Login Modal -->
+                        <div id="modal-container">
+                            <div class="modal-background">
+                                <div class="modal">
+                                    <h2>Login Form</h2>
+                                    <button id="register" style="font-size: 2rem;">to Register</button>
+                                    <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                                        preserveAspectRatio="none">
+                                        <rect x="0" y="0" fill="none" width="500" height="400"></rect>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div id="modal-container1">
-                        <div class="modal-background">
-                            <div class="modal">
-                                <h2>Register Form</h2>
-                                <button id="login" style="font-size: 2rem;">to Login</button>
-                                <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
-                                    preserveAspectRatio="none">
-                                    <rect x="0" y="0" fill="none" width="500" height="400"></rect>
-                                </svg>
+    
+                        <div id="modal-container1">
+                            <div class="modal-background">
+                                <div class="modal">
+                                    <h2>Register Form</h2>
+                                    <button id="login" style="font-size: 2rem;">to Login</button>
+                                    <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                                        preserveAspectRatio="none">
+                                        <rect x="0" y="0" fill="none" width="500" height="400"></rect>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
+    
+                        <!-- Top social -->
+                        <ul class="d-flex">
+                            <li class="nav-item"> <a class="navbar-link text-white" href="#"><i
+                                        class="fab fa-facebook-f"></i></a> </li>
+                            <li class="nav-item"> <a class="navbar-link text-white" href="#"><i
+                                        class="fab fa-instagram"></i></a> </li>
+                            <li class="nav-item"> <a class="navbar-link text-white" href="#"><i
+                                        class="fab fa-twitter"></i></a> </li>
+                        </ul>
                     </div>
-
-                    <!-- Top social -->
-                    <ul class="d-flex">
-                        <li class="nav-item"> <a class="navbar-link text-white" href="#"><i
-                                    class="fab fa-facebook-f"></i></a> </li>
-                        <li class="nav-item"> <a class="navbar-link text-white" href="#"><i
-                                    class="fab fa-instagram"></i></a> </li>
-                        <li class="nav-item"> <a class="navbar-link text-white" href="#"><i
-                                    class="fab fa-twitter"></i></a> </li>
-                    </ul>
                 </div>
+                <div class="divider"></div>
             </div>
-            <div class="divider"></div>
+        </div>
 
-            <!-- Main navbar-->
-            <nav class="navbar">
+        <!-- Main navbar-->
+        <div class="main-nav-container" >
+            <nav class="navbar grid">
                 <a class="z-index1" href="#"><img class="navbar-brand" src="assets/images/logo.jpg" /></a>
                 <ul class="navbar-nav">
 
@@ -243,7 +248,9 @@
                     </div>
                 </div>
             </nav>
-        </header>
+        </div>
+
+
         <!-- Text Slide -->
         <div class="grid">
             <div class="slider1">
@@ -296,58 +303,97 @@
     <a id="backtop-button"></a>
 
     <!-- Content -->
-    <div class="container">
-        <div class="grid">
-            <div class="wrapper" style="margin-top: 200px;">
-                <div class="pic1"></div>
-                <div class="pic2"></div>
-                <div class="pic3"></div>
+    <div class="container" style="padding-top: 100px;">
+        <div class="grid grid-bcolor">
+            <div class="list-card-title">
+
+                    <h2>Our Portfolio</h2>
+
             </div>
-        </div>
-        <!-- List Card -->
-        <div class="card-container grid">
-            <a href="#" class="card" id="card">
-                <d class="card-image">
-                    <img src="./assets/images/card1.jpg" alt="card1 image">
-                </d iv>
-                <div class="card-img-overlay">
-                    <h4 class="card-logo">Logo</h4>
-                    <div class="card-content">
-                        <h5 class="card-content-title">The missing link</h5>
-                        <p class="card-content-des">Small things that make difference</p>
+            <!-- List Card -->
+            <div class="card-container">
+                <a href="#" class="card" id="card">
+                    <d class="card-image">
+                        <img src="./assets/images/card1.jpg" alt="card1 image">
+                    </d iv>
+                    <div class="card-img-overlay">
+                        <h4 class="card-logo">Logo</h4>
+                        <div class="card-content">
+                            <h5 class="card-content-title">The missing link</h5>
+                            <p class="card-content-des">Small things that make difference</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-           
-            <a href="#" class="card" id="card1">
-                <div class="card-image">
-                    <img src="./assets/images/card1.jpg" alt="card1 image">
-                </div>
-                <div class="card-img-overlay">
-                    <h4 class="card-logo">Logo</h4>
-                    <div class="card-content">
-                        <h5 class="card-content-title">The missing link</h5>
-                        <p class="card-content-des">Small things that make difference</p>
+                </a>
+
+                <a href="#" class="card" id="card1">
+                    <div class="card-image">
+                        <img src="./assets/images/card2.jpg" alt="card1 image">
                     </div>
-                </div>
-            </a>
-            <a href="#" class="card" id="card2">
-                <div class="card-image">
-                    <img src="./assets/images/card1.jpg" alt="card1 image">
-                </div>
-                <div class="card-img-overlay">
-                    <h4 class="card-logo">Logo</h4>
-                    <div class="card-content">
-                        <h5 class="card-content-title">The missing link</h5>
-                        <p class="card-content-des">Small things that make difference</p>
+                    <div class="card-img-overlay">
+                        <h4 class="card-logo">Logo</h4>
+                        <div class="card-content">
+                            <h5 class="card-content-title">The missing link</h5>
+                            <p class="card-content-des">Small things that make difference</p>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+                <a href="#" class="card" id="card2">
+                    <div class="card-image">
+                        <img src="./assets/images/card3.jpg" alt="card1 image">
+                    </div>
+                    <div class="card-img-overlay">
+                        <h4 class="card-logo">Logo</h4>
+                        <div class="card-content">
+                            <h5 class="card-content-title">The missing link</h5>
+                            <p class="card-content-des">Small things that make difference</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-container1 " style="margin-top: 40px;">
+                <a href="#" class="card" id="card3">
+                    <d class="card-image">
+                        <img src="./assets/images/card4.jpg" alt="card1 image">
+                    </d iv>
+                    <div class="card-img-overlay">
+                        <h4 class="card-logo">Logo</h4>
+                        <div class="card-content">
+                            <h5 class="card-content-title">The missing link</h5>
+                            <p class="card-content-des">Small things that make difference</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="card" id="card4">
+                    <div class="card-image">
+                        <img src="./assets/images/card3.jpg" alt="card1 image">
+                    </div>
+                    <div class="card-img-overlay">
+                        <h4 class="card-logo">Logo</h4>
+                        <div class="card-content">
+                            <h5 class="card-content-title">The missing link</h5>
+                            <p class="card-content-des">Small things that make difference</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card" id="card5">
+                    <div class="card-image">
+                        <img src="./assets/images/card2.jpg" alt="card1 image">
+                    </div>
+                    <div class="card-img-overlay">
+                        <h4 class="card-logo">Logo</h4>
+                        <div class="card-content">
+                            <h5 class="card-content-title">The missing link</h5>
+                            <p class="card-content-des">Small things that make difference</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
 
-    
+
 
     <footer class="footer"></footer>
 

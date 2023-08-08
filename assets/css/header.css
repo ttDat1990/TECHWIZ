@@ -1,3 +1,7 @@
+.top-nav-container {
+  width: 100%;
+}
+
 .d-flex-space {
   display: flex;
   justify-content: space-between;
@@ -57,7 +61,8 @@
   cursor: pointer;
 }
 
-#modal-container, #modal-container1 {
+#modal-container,
+#modal-container1 {
   position: absolute;
   background-color: transparent;
   display: table;
@@ -66,131 +71,72 @@
   top: 0;
   left: 0;
   transform: scale(0);
-  z-index: 1;
+  z-index: 2;
 }
-#modal-container.modal-login, #modal-container.modal-register, #modal-container1.modal-login, #modal-container1.modal-register {
+#modal-container.modal-login, #modal-container.modal-register,
+#modal-container1.modal-login,
+#modal-container1.modal-register {
   transform: scale(1);
 }
-#modal-container.modal-login .modal-background, #modal-container.modal-register .modal-background, #modal-container1.modal-login .modal-background, #modal-container1.modal-register .modal-background {
+#modal-container.modal-login .modal-background, #modal-container.modal-register .modal-background,
+#modal-container1.modal-login .modal-background,
+#modal-container1.modal-register .modal-background {
   background: rgba(0, 0, 0, 0);
   animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.modal-login .modal-background .modal, #modal-container.modal-register .modal-background .modal, #modal-container1.modal-login .modal-background .modal, #modal-container1.modal-register .modal-background .modal {
+#modal-container.modal-login .modal-background .modal, #modal-container.modal-register .modal-background .modal,
+#modal-container1.modal-login .modal-background .modal,
+#modal-container1.modal-register .modal-background .modal {
   background-color: transparent;
   animation: modalFadeIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.modal-login .modal-background .modal h2,
 #modal-container.modal-login .modal-background .modal button, #modal-container.modal-register .modal-background .modal h2,
-#modal-container.modal-register .modal-background .modal button, #modal-container1.modal-login .modal-background .modal h2,
-#modal-container1.modal-login .modal-background .modal button, #modal-container1.modal-register .modal-background .modal h2,
+#modal-container.modal-register .modal-background .modal button,
+#modal-container1.modal-login .modal-background .modal h2,
+#modal-container1.modal-login .modal-background .modal button,
+#modal-container1.modal-register .modal-background .modal h2,
 #modal-container1.modal-register .modal-background .modal button {
   opacity: 0;
   position: relative;
   z-index: 10;
   animation: modalContentFadeIn 0.5s 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.modal-login .modal-background .modal .modal-svg rect, #modal-container.modal-register .modal-background .modal .modal-svg rect, #modal-container1.modal-login .modal-background .modal .modal-svg rect, #modal-container1.modal-register .modal-background .modal .modal-svg rect {
+#modal-container.modal-login .modal-background .modal .modal-svg rect, #modal-container.modal-register .modal-background .modal .modal-svg rect,
+#modal-container1.modal-login .modal-background .modal .modal-svg rect,
+#modal-container1.modal-register .modal-background .modal .modal-svg rect {
   animation: sketchIn 0.5s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.modal-login.out, #modal-container.modal-register.out, #modal-container1.modal-login.out, #modal-container1.modal-register.out {
+#modal-container.modal-login.out, #modal-container.modal-register.out,
+#modal-container1.modal-login.out,
+#modal-container1.modal-register.out {
   animation: quickScaleDown 0s 0.5s linear forwards;
 }
-#modal-container.modal-login.out .modal-background, #modal-container.modal-register.out .modal-background, #modal-container1.modal-login.out .modal-background, #modal-container1.modal-register.out .modal-background {
+#modal-container.modal-login.out .modal-background, #modal-container.modal-register.out .modal-background,
+#modal-container1.modal-login.out .modal-background,
+#modal-container1.modal-register.out .modal-background {
   animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
-#modal-container.modal-login.out .modal-background .modal, #modal-container.modal-register.out .modal-background .modal, #modal-container1.modal-login.out .modal-background .modal, #modal-container1.modal-register.out .modal-background .modal {
+#modal-container.modal-login.out .modal-background .modal, #modal-container.modal-register.out .modal-background .modal,
+#modal-container1.modal-login.out .modal-background .modal,
+#modal-container1.modal-register.out .modal-background .modal {
   animation: modalFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 #modal-container.modal-login.out .modal-background .modal h2,
 #modal-container.modal-login.out .modal-background .modal button, #modal-container.modal-register.out .modal-background .modal h2,
-#modal-container.modal-register.out .modal-background .modal button, #modal-container1.modal-login.out .modal-background .modal h2,
-#modal-container1.modal-login.out .modal-background .modal button, #modal-container1.modal-register.out .modal-background .modal h2,
+#modal-container.modal-register.out .modal-background .modal button,
+#modal-container1.modal-login.out .modal-background .modal h2,
+#modal-container1.modal-login.out .modal-background .modal button,
+#modal-container1.modal-register.out .modal-background .modal h2,
 #modal-container1.modal-register.out .modal-background .modal button {
   animation: modalContentFadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) backwards;
 }
-#modal-container.modal-login.out .modal-background .modal .modal-svg rect, #modal-container.modal-register.out .modal-background .modal .modal-svg rect, #modal-container1.modal-login.out .modal-background .modal .modal-svg rect, #modal-container1.modal-register.out .modal-background .modal .modal-svg rect {
+#modal-container.modal-login.out .modal-background .modal .modal-svg rect, #modal-container.modal-register.out .modal-background .modal .modal-svg rect,
+#modal-container1.modal-login.out .modal-background .modal .modal-svg rect,
+#modal-container1.modal-register.out .modal-background .modal .modal-svg rect {
   animation: sketchOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-@keyframes fadeIn {
-  0% {
-    background: rgba(0, 0, 0, 0);
-  }
-  100% {
-    background: rgba(0, 0, 0, 0.7);
-  }
-}
-@keyframes fadeOut {
-  0% {
-    background: rgba(0, 0, 0, 0.7);
-  }
-  100% {
-    background: rgba(0, 0, 0, 0);
-  }
-}
-@keyframes sketchIn {
-  0% {
-    stroke-dashoffset: 1800;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes sketchOut {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 1800;
-  }
-}
-@keyframes modalFadeIn {
-  0% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: white;
-  }
-}
-@keyframes modalFadeOut {
-  0% {
-    background-color: white;
-  }
-  100% {
-    background-color: transparent;
-  }
-}
-@keyframes modalContentFadeIn {
-  0% {
-    opacity: 0;
-    top: -20px;
-  }
-  100% {
-    opacity: 1;
-    top: 0;
-  }
-}
-@keyframes modalContentFadeOut {
-  0% {
-    opacity: 1;
-    top: 0px;
-  }
-  100% {
-    opacity: 0;
-    top: -20px;
-  }
-}
-@keyframes quickScaleDown {
-  0% {
-    transform: scale(1);
-  }
-  99.9% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
 .modal-background {
   display: table-cell;
   background: rgba(0, 0, 0, 0.8);
@@ -268,8 +214,24 @@
   opacity: 0.1;
 }
 
+.main-nav-container {
+  margin-top: 20px;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  height: 60px;
+  z-index: 1;
+}
+.main-nav-container.hidden {
+  transform: translate3d(0, -200%, 0);
+}
+.main-nav-container.offset-nav {
+  transform: translate3d(0, -100%, 0);
+}
+
 .navbar {
-  height: 96px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -354,20 +316,6 @@
   list-style: none;
 }
 
-@keyframes dropdownMenuIn {
-  0% {
-    transform: transLateY(15px);
-    opacity: 0;
-  }
-  80% {
-    transform: transLateY(0px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: transLateY(0px);
-    opacity: 1;
-  }
-}
 .dropdown-item {
   text-decoration: none;
   font-size: var(--font-size-normal);
@@ -536,9 +484,23 @@
   color: #d6293e;
 }
 
+.bg-overlay:before {
+  content: " ";
+  background: #000;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .slider {
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -574,7 +536,7 @@
 
 .title-1 {
   position: absolute;
-  top: 10%;
+  top: 25%;
   left: 0%;
   z-index: 2;
 }
@@ -638,20 +600,6 @@
   animation-delay: -6s;
 }
 
-@keyframes slide {
-  0%, 45%, 100% {
-    transform: translateX(0);
-    animation-timing-function: ease;
-  }
-  50% {
-    transform: translateX(-100%);
-    animation-timing-function: step-end;
-  }
-  95% {
-    transform: translateX(100%);
-    animation-timing-function: ease;
-  }
-}
 .text-transparent {
   opacity: 0 !important;
 }
