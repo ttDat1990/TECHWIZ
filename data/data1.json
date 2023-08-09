@@ -1,0 +1,416 @@
+{
+    "players": [
+        {
+            "name": "Lionel Messi",
+            "age": 34,
+            "nationality": "Argentina",
+            "club": "Paris Saint-Germain",
+            "position": "Forward",
+            "image": "messi.jpg"
+        },
+        {
+            "name": "Cristiano Ronaldo",
+            "age": 36,
+            "nationality": "Portugal",
+            "club": "Manchester United",
+            "position": "Forward",
+            "image": "ronaldo.jpg"
+        },
+        {
+            "name": "Neymar Jr.",
+            "age": 29,
+            "nationality": "Brazil",
+            "club": "Paris Saint-Germain",
+            "position": "Forward",
+            "image": "neymar.jpg"
+        },
+        {
+            "name": "Robert Lewandowski",
+            "age": 33,
+            "nationality": "Poland",
+            "club": "Bayern Munich",
+            "position": "Forward",
+            "image": "lewandowski.jpg"
+        },
+        {
+            "name": "Kevin De Bruyne",
+            "age": 30,
+            "nationality": "Belgium",
+            "club": "Manchester City",
+            "position": "Midfielder",
+            "image": "debruyn.jpg"
+        },
+
+            {
+                "name": "Andrés Iniesta",
+                "age": 35,
+                "nationality": "Spain",
+                "club": "Vissel Kobe",
+                "position": "Midfielder",
+                "image": "iniesta.jpg"
+            },
+            {
+                "name": "Arjen Robben",
+                "age": 35,
+                "nationality": "Netherlands",
+                "club": "Groningen",
+                "position": "Forward",
+                "image": "robben.jpg"
+            },
+            {
+                "name": "Sergio Ramos",
+                "age": 35,
+                "nationality": "Spain",
+                "club": "Paris Saint-Germain",
+                "position": "Defender",
+                "image": "ramos.jpg"
+            },
+            {
+                "name": "Zlatan Ibrahimović",
+                "age": 35,
+                "nationality": "Sweden",
+                "club": "AC Milan",
+                "position": "Forward",
+                "image": "ibrahimovic.jpg"
+            }
+
+
+    ],
+    "tournaments": [
+        {
+            "name": "FIFA World Cup",
+            "country": "Various",
+            "logo": "fifa.png"
+        },
+        {
+            "name": "UEFA Champions League",
+            "country": "Europe",
+            "logo": "ucl.png"
+        },
+        {
+            "name": "Premier League",
+            "country": "England",
+            "logo": "epl.png"
+        },
+        {
+            "name": "La Liga",
+            "country": "Spain",
+            "logo": "laliga.png"
+        },
+        {
+            "name": "Serie A",
+            "country": "Italy",
+            "logo": "seriea.png"
+        },
+            {
+                "name": "Copa America",
+                "country": "South America",
+                "logo": "copa.png"
+            },
+            {
+                "name": "Bundesliga",
+                "country": "Germany",
+                "logo": "bundesliga.png"
+            },
+            {
+                "name": "Ligue 1",
+                "country": "France",
+                "logo": "ligue1.png"
+            },
+            {
+                "name": "AFC Asian Cup",
+                "country": "Various",
+                "logo": "asiancup.png"
+            },
+            {
+                "name": "Copa del Rey",
+                "country": "Spain",
+                "logo": "copadelrey.png"
+            },
+            {
+                "name": "Eredivisie",
+                "country": "Netherlands",
+                "logo": "eredivisie.png"
+            },
+            {
+                "name": "Campeonato Brasileiro",
+                "country": "Brazil",
+                "logo": "brasileiro.png"
+            },
+            {
+                "name": "Primeira Liga",
+                "country": "Portugal",
+                "logo": "primeiraliga.png"
+            },
+            {
+                "name": "CONCACAF Gold Cup",
+                "country": "North America",
+                "logo": "goldcup.png"
+            },
+            {
+                "name": "A-League",
+                "country": "Australia",
+                "logo": "aleague.png"
+            },
+            {
+                "name": "J1 League",
+                "country": "Japan",
+                "logo": "j1league.png"
+            },
+            {
+                "name": "MLS",
+                "country": "United States",
+                "logo": "mls.png"
+            },
+            {
+                "name": "Copa Libertadores",
+                "country": "South America",
+                "logo": "libertadores.png"
+            },
+            {
+                "name": "CAF Africa Cup of Nations",
+                "country": "Africa",
+                "logo": "afcon.png"
+            },
+            {
+                "name": "FIFA Club World Cup",
+                "country": "Various",
+                "logo": "clubworldcup.png"
+            }
+        
+    ],
+    "clubs": [
+        {
+            "name": "Paris Saint-Germain",
+            "image": "psg.png",
+            "tournament": "UEFA Champions League",
+            "country": "France",
+            "points": 75
+        },
+
+        {
+            "name": "Bayern Munich",
+            "image": "bayern.png",
+            "tournament": "Bundesliga",
+            "country": "Germany",
+            "points": 82
+        },
+
+        {
+            "name": "Juventus",
+            "image": "juventus.png",
+            "tournament": "Serie A",
+            "country": "Italy",
+            "points": 76
+        },
+        
+            {
+                "name": "Liverpool",
+                "image": "liverpool.png",
+                "tournament": "Premier League",
+                "country": "England",
+                "points": 82
+            },
+            {
+                "name": "Barcelona",
+                "image": "barcelona.png",
+                "tournament": "La Liga",
+                "country": "Spain",
+                "points": 85
+            },
+            {
+                "name": "AC Milan",
+                "image": "acmilan.png",
+                "tournament": "Serie A",
+                "country": "Italy",
+                "points": 79
+            },
+            {
+                "name": "Ajax",
+                "image": "ajax.png",
+                "tournament": "Eredivisie",
+                "country": "Netherlands",
+                "points": 72
+            },
+            {
+                "name": "FC Porto",
+                "image": "porto.png",
+                "tournament": "Primeira Liga",
+                "country": "Portugal",
+                "points": 70
+            },
+            {
+                "name": "Real Madrid",
+                "image": "realmadrid.png",
+                "tournament": "La Liga",
+                "country": "Spain",
+                "points": 78
+            },
+            {
+                "name": "Barcelona",
+                "image": "barcelona.png",
+                "tournament": "La Liga",
+                "country": "Spain",
+                "points": 76
+            },
+            {
+                "name": "Atletico Madrid",
+                "image": "atleticomadrid.png",
+                "tournament": "La Liga",
+                "country": "Spain",
+                "points": 73
+            },
+            {
+                "name": "Sevilla",
+                "image": "sevilla.png",
+                "tournament": "La Liga",
+                "country": "Spain",
+                "points": 68
+            },
+            {
+                "name": "Valencia",
+                "image": "valencia.png",
+                "tournament": "La Liga",
+                "country": "Spain",
+                "points": 61
+            },
+            {
+                "name": "Real Sociedad",
+                "image": "realsociedad.png",
+                "tournament": "La Liga",
+                "country": "Spain",
+                "points": 57
+            },
+            {
+                "name": "Villarreal",
+                "image": "villarreal.png",
+                "tournament": "La Liga",
+                "country": "Spain",
+                "points": 55
+            },
+            {
+                "name": "Manchester United",
+                "image": "manutd.png",
+                "tournament": "Premier League",
+                "country": "England",
+                "points": 80
+            },
+            {
+                "name": "Manchester City",
+                "image": "mancity.png",
+                "tournament": "Premier League",
+                "country": "England",
+                "points": 82
+            },
+            {
+                "name": "Chelsea",
+                "image": "chelsea.png",
+                "tournament": "Premier League",
+                "country": "England",
+                "points": 78
+            },
+            {
+                "name": "Liverpool",
+                "image": "liverpool.png",
+                "tournament": "Premier League",
+                "country": "England",
+                "points": 75
+            },
+            {
+                "name": "Tottenham Hotspur",
+                "image": "tottenham.png",
+                "tournament": "Premier League",
+                "country": "England",
+                "points": 72
+            },
+            {
+                "name": "Arsenal",
+                "image": "arsenal.png",
+                "tournament": "Premier League",
+                "country": "England",
+                "points": 69
+            },
+            {
+                "name": "Leicester City",
+                "image": "leicester.png",
+                "tournament": "Premier League",
+                "country": "England",
+                "points": 67
+            }
+            
+        
+    ],
+    "matches": [
+        {
+            "team1": "Manchester United",
+            "team2": "Manchester City",
+            "score1": 2,
+            "score2": 1,
+            "time": "2023-08-15 20:00"
+        },
+        {
+            "team1": "Real Madrid",
+            "team2": "Barcelona",
+            "score1": 1,
+            "score2": 1,
+            "time": "2023-08-18 21:15"
+        },
+        {
+            "team1": "Bayern Munich",
+            "team2": "Paris Saint-Germain",
+            "score1": 3,
+            "score2": 2,
+            "time": "2023-08-20 19:30"
+        },
+        {
+            "team1": "Juventus",
+            "team2": "AC Milan",
+            "score1": 0,
+            "score2": 1,
+            "time": "2023-08-21 20:45"
+        },
+        {
+            "team1": "Liverpool",
+            "team2": "Chelsea",
+            "score1": 2,
+            "score2": 2,
+            "time": "2023-08-23 19:00"
+        },
+            {
+                "team1": "Paris Saint-Germain",
+                "team2": "Bayern Munich",
+                "score1": 1,
+                "score2": 2,
+                "time": "2023-08-25 18:30"
+            },
+            {
+                "team1": "Manchester City",
+                "team2": "Liverpool",
+                "score1": 2,
+                "score2": 2,
+                "time": "2023-08-28 17:45"
+            },
+            {
+                "team1": "Barcelona",
+                "team2": "Real Madrid",
+                "score1": 2,
+                "score2": 3,
+                "time": "2023-08-30 20:00"
+            },
+            {
+                "team1": "AC Milan",
+                "team2": "Juventus",
+                "score1": 1,
+                "score2": 1,
+                "time": "2023-09-02 19:15"
+            },
+            {
+                "team1": "Chelsea",
+                "team2": "Manchester United",
+                "score1": 0,
+                "score2": 1,
+                "time": "2023-09-05 21:00"
+            }
+        ]
+        
+}

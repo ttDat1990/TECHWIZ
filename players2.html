@@ -10,27 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/listItem.css">
+    <link rel="stylesheet" href="./assets/css/listItem2.css">
     <link rel="stylesheet" href="./assets/css/animation.css">
+    <!-- private css -->
+    <link rel="stylesheet" href="./assets/css/player.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
 </head>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-<body>
-    <!-- Slider-Header -->
-    <div class="slider">
-
-        <!-- Slider -->
-        <div class="slide bg-overlay"></div>
-        <div class="slide bg-overlay"></div>
-
+<body class="player-background">
+    <div class="container">
         <!-- Header -->
         <div class="top-nav-container">
             <div class="grid">
@@ -140,7 +134,7 @@
 
                     <!-- Nav item Drop Down -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link ">Tournaments</a>
+                        <a class="nav-link ">Tournamen</a>
                         <ul class="dropdown-menu">
                             <li> <a class="dropdown-item" href="index.html">UEFA Champions League</a></li>
                             <li> <a class="dropdown-item" href="index.html">UEFA Europa League</a></li>
@@ -156,7 +150,7 @@
 
                     <!-- Nav item Link -->
                     <li class="nav-item">
-                        <a href="players.html" class="nav-link ">Player Galleries</a>
+                        <a class="nav-link ">Player Galleries</a>
                     </li>
 
                     <!-- Nav item Link -->
@@ -178,7 +172,7 @@
                         <div class="dropdown-menu dropdown-search">
                             <div class="search-input-wrapper">
                                 <input class="search-input" type="text" placeholder="Search...">
-                                <button class="search-button">Search</button>
+                                <button class="search-button" id="search-button">Search</button>
                             </div>
                             <div class="search-recent">
                                 <div class="search-recent-header">
@@ -232,133 +226,32 @@
             </nav>
         </div>
 
-
-        <!-- Text Slide -->
-        <div class="grid">
-            <div class="slider1">
-                <div class="slide1">
-                    <div class="title-1">
-                        <div class="header-title animate__animated animate__fadeInUp text-1" id="text-1">Looking for the latest soccer match results?</div>
-                        <div class="big-title animate__animated animate__fadeInUp animate__delay-1s text-1">Live Score</div>
-                        <div class="content-title animate__animated animate__fadeInUp animate__delay-2s text-1">Our website offers live updates and real-time information on all the latest matches. Never miss a goal or a crucial moment again. </div>
-                        <div class="content-title animate__animated animate__fadeInUp animate__delay-2s text-1">Visit us now and experience the thrill of the game like never before!</div>
-                        <button
-                            class="button-title animate__animated animate__fadeInUp animate__delay-3s text-1">Watch now</button>
-                    </div>
-                </div>
-                <div class="slide1">
-                    <div class="title-1">
-                        <div class="header-title animate__animated animate__fadeInUp text-1" id="text-1">Get the latest soccer news and updates on our website!
-                        </div>
-                        <div class="big-title animate__animated animate__fadeInUp animate__delay-1s text-1">Soccer updates</div>
-                        <div class="content-title animate__animated animate__fadeInUp animate__delay-2s text-1">comprehensive coverage of the soccer world, including player profiles, team news, and tournament updates
-                        </div>
-                        <div class="content-title animate__animated animate__fadeInUp animate__delay-2s text-1">Get all the information you need in one convenient place. Visit us now and never miss a beat!</div>
-                        <button
-                            class="button-title animate__animated animate__fadeInUp animate__delay-3s text-1">Visit
-                            Us</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scroll Down -->
-    <div class="scroll-down">
-        <div class="scroll-line"></div>
-        <span class="scroll-text">Scroll Down</span>
     </div>
 
     <!-- Back Top-->
     <a id="backtop-button"></a>
 
     <!-- Content -->
-    <div class="container" style="padding-top: 100px;">
-        <div class="grid grid-bcolor">
-            <div class="list-card-title">
-
-                <h2>Our Portfolio</h2>
-
+    <div class="player-container">
+        <div class="grid">
+            <div class="list-player-title-wrapper">
+                <div class="list-player-title">
+                    List of all football Players
+                </div>
+                <div class="search-input-wrapper" style="flex: 0;">
+                    <input class="search-input" id="search-input1" type="text" placeholder="Search player by name">
+                    <button class="search-button" id="search-button1">Search</button>
+                </div>
             </div>
+
             <!-- List Card -->
-            <div class="card-container">
-                <a href="#" class="card" id="card">
-                    <d class="card-image">
-                        <img src="./assets/images/card1.jpg" alt="card1 image">
-                    </d iv>
-                    <div class="card-img-overlay">
-                        <h4 class="card-logo">Logo</h4>
-                        <div class="card-content">
-                            <h5 class="card-content-title">The missing link</h5>
-                            <p class="card-content-des">Small things that make difference</p>
-                        </div>
-                    </div>
-                </a>
+            <div class="card-container" id="card-container">
 
-                <a href="#" class="card" id="card1">
-                    <div class="card-image">
-                        <img src="./assets/images/card2.jpg" alt="card1 image">
-                    </div>
-                    <div class="card-img-overlay">
-                        <h4 class="card-logo">Logo</h4>
-                        <div class="card-content">
-                            <h5 class="card-content-title">The missing link</h5>
-                            <p class="card-content-des">Small things that make difference</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card" id="card2">
-                    <div class="card-image">
-                        <img src="./assets/images/card3.jpg" alt="card1 image">
-                    </div>
-                    <div class="card-img-overlay">
-                        <h4 class="card-logo">Logo</h4>
-                        <div class="card-content">
-                            <h5 class="card-content-title">The missing link</h5>
-                            <p class="card-content-des">Small things that make difference</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="card-container1 " style="margin-top: 40px;">
-                <a href="#" class="card" id="card3">
-                    <d class="card-image">
-                        <img src="./assets/images/card4.jpg" alt="card1 image">
-                    </d iv>
-                    <div class="card-img-overlay">
-                        <h4 class="card-logo">Logo</h4>
-                        <div class="card-content">
-                            <h5 class="card-content-title">The missing link</h5>
-                            <p class="card-content-des">Small things that make difference</p>
-                        </div>
-                    </div>
-                </a>
 
-                <a href="#" class="card" id="card4">
-                    <div class="card-image">
-                        <img src="./assets/images/card3.jpg" alt="card1 image">
-                    </div>
-                    <div class="card-img-overlay">
-                        <h4 class="card-logo">Logo</h4>
-                        <div class="card-content">
-                            <h5 class="card-content-title">The missing link</h5>
-                            <p class="card-content-des">Small things that make difference</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card" id="card5">
-                    <div class="card-image">
-                        <img src="./assets/images/card2.jpg" alt="card1 image">
-                    </div>
-                    <div class="card-img-overlay">
-                        <h4 class="card-logo">Logo</h4>
-                        <div class="card-content">
-                            <h5 class="card-content-title">The missing link</h5>
-                            <p class="card-content-des">Small things that make difference</p>
-                        </div>
-                    </div>
-                </a>
             </div>
+
+
+
         </div>
     </div>
 
@@ -366,6 +259,68 @@
 
 
     <footer class="footer"></footer>
+
+    <!-- Load data from json -->
+    <script>
+        // fetch('./data/data.json')
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         let searchValue = document.querySelector('#search-input').value;
+        //         // Lọc dữ liệu theo giá trị tìm kiếm
+        //         let filteredData = data.players.filter(item => item.name.includes(searchValue));
+        //         let cardContainer = document.querySelector('#card-container');
+        //         data.players.forEach(item => {
+        //             let card = document.createElement('a');
+        //             card.className = 'card';
+        //             card.innerHTML = `
+        //                                 <div class="card-image">
+        //                                 <img src="./assets/images/${item.image}" alt="${item.image}">
+        //                                 </div>
+        //                                 <div class="card-img-overlay">
+        //                                 <h4 class="card-logo">${item.name}</h4>
+        //                                 <div class="card-content">
+        //                                     <h5 class="card-content-title">Position ${item.position}</h5>
+        //                                     <p class="card-content-des">Current team: ${item.club}</p>
+        //                                 </div>
+        //                                 </div>
+        //                             `;
+        //             cardContainer.appendChild(card);
+        //         });
+        //     });
+
+        let searchButton = document.querySelector('#search-button1');
+        searchButton.addEventListener('click', () => {
+            fetch('./data/data.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Lấy giá trị từ thẻ input
+                    let searchValue = document.querySelector('#search-input1').value.toLowerCase();
+                    // Lọc dữ liệu theo giá trị tìm kiếm
+                    let filteredData = data.players.filter(item => item.name.toLowerCase().includes(searchValue));
+                    // Hiển thị kết quả tìm kiếm
+                    let cardContainer = document.querySelector('#card-container');
+                    cardContainer.innerHTML = '';
+                    filteredData.forEach(item => {
+                        let card = document.createElement('a');
+                        card.classList.add('card', 'animate__fadeInDown', 'animate__animated');
+                        card.innerHTML = `
+                                            <div class="card-image">
+                                            <img src="./assets/images/${item.image}" alt="${item.image}">
+                                            </div>
+                                            <div class="card-img-overlay">
+                                            <h4 class="card-logo">${item.name}</h4>
+                                            <div class="card-content">
+                                                <h5 class="card-content-title">Position ${item.position}</h5>
+                                                <p class="card-content-des">Current team: ${item.club}</p>
+                                            </div>
+                                            </div>
+                                        `;
+                        cardContainer.appendChild(card);
+                    });
+                });
+        });
+
+    </script>
 
     <!-- Custom JS -->
     <script src="./assets/js/js.js"></script>

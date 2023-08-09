@@ -1,3 +1,9 @@
+.background-nav {
+  height: 180px;
+  background-image: url(../images/topbanner.jpg);
+  background-size: 100%;
+}
+
 .top-nav-container {
   width: 100%;
 }
@@ -271,12 +277,21 @@
   font-weight: 500;
   color: var(--nav-color);
   cursor: pointer;
+  display: flex;
 }
 .nav-link:hover {
   color: var(--primary-color);
 }
+.nav-link:hover .nav-icon-link {
+  color: var(--primary-color);
+}
 .nav-link .fa-solid {
   font-size: 3rem;
+}
+.nav-link .nav-icon-link {
+  font-size: var(--font-size-normal);
+  color: var(--nav-color);
+  margin-right: 5px;
 }
 
 .dropdown-menu {
@@ -287,7 +302,6 @@
   background-color: var(--white-color);
   min-width: 240px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
   padding-left: 0;
   padding: 16px 10px;
 }
@@ -337,7 +351,7 @@
   left: -180px;
   width: 300px;
   padding: 8px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .dropdown-search::after {
   content: "";
@@ -425,7 +439,7 @@
   left: -180px;
   width: 260px;
   padding: 16px 10px;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 .dropdown-menu-profile::after {
   content: "";
@@ -446,8 +460,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .profile-info {
@@ -583,12 +596,12 @@
 }
 
 .slider .slide:nth-child(1) {
-  background-image: url("../images/pic4.jpg");
+  background-image: url("../images/slideimg2.jpg");
   animation-delay: 0;
 }
 
 .slider .slide:nth-child(2) {
-  background-image: url("../images/pic5.jpg");
+  background-image: url("../images/slideimg3.jpg");
   animation-delay: -6s;
 }
 

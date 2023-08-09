@@ -1,0 +1,36 @@
+.player-background {
+    background-image: url(/assets/images/bgcontent.jpg);
+}
+
+.player-container{
+    padding-top: 200px;
+}
+.list-player-title-wrapper{
+display: flex;
+justify-content: space-between;
+margin-bottom: 30px;
+}
+
+.list-player-title {
+
+    color: transparent !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color);
+    text-shadow: 0.03em 0.03em 0 #ea110c;
+    font-size: 6rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: var(--text-color) !important;
+    }
+}
+
+.card{
+    .card-image{
+        img {
+            object-fit: cover;
+        }
+    }
+
+}
