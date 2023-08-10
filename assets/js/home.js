@@ -46,7 +46,7 @@ window.onload = function () {
     grid.innerHTML = `                                    
                         <div class="list-title-wrapper">
                             <div class="list-title">
-                                Top 10 Club
+                                Top 10 Scores
                             </div>
                             <div class="search-input-wrapper" style="flex: 0;">
                                 
@@ -57,87 +57,105 @@ window.onload = function () {
                         `;
     clubContainer.appendChild(grid);
 
-    //first load match
+    //first load match-result
     let matchWrapper = document.querySelector('#matchWrapper');
     var matchResult = document.createElement('div');
     matchResult.className = 'match-result';
     matchResult.id = 'matchResult';
     matchResult.innerHTML = `                                    
                         <div class="match-title">
-                        All live Score Today
+                        All Live Score Today
                         </div>                                                         
                         `;
     matchWrapper.appendChild(matchResult);
+
+    //first load match-schedule
+    var matchSchedule = document.createElement('div');
+    matchSchedule.className = 'match-schedule';
+    matchSchedule.id = 'matchSchedule';
+    matchSchedule.innerHTML = `                                    
+                        <div class="match-title">
+                        All Best Match Schedule
+                        </div>                                                         
+                        `;
+    matchWrapper.appendChild(matchSchedule);
 
     //Load data
     fetch('./data/data.json')
         .then(response => response.json())
         .then(data => {
             //data player
-            data.players.forEach(item => {
-                let allCard = document.createElement('div');
-                let card = document.createElement('a');
-                card.className = 'card';
-                card.innerHTML = `                                                                                                            
-                            <div class="card-image">
-                                <img src="./assets/images/${item.image}" alt="${item.image}">
-                                </div>
-                                <div class="card-img-overlay">
-                                <h4 class="card-logo">${item.name}</h4>
-                                <div class="card-content">
-                                    <h5 class="card-content-title">Position ${item.position}</h5>
-                                    <p class="card-content-des">Current team: ${item.club}</p>
-                                </div>
-                            </div>                                                                                                        
-                                `;
-                let cardContainer1 = document.querySelector('#card-container');
-                cardContainer1.appendChild(card);
-            });
-            //data tournaments
-            data.tournaments.forEach(item => {
-                let allCard = document.createElement('div');
-                let card = document.createElement('a');
-                card.className = 'card';
-                card.innerHTML = `                                                                                                            
-                                <div class="card-image">
-                                    <img src="./assets/images/${item.logo}" alt="${item.logo}">
-                                    </div>
-                                    <div class="card-img-overlay">
-                                    <h4 class="card-logo">${item.name}</h4>
-                                    <div class="card-content">
-                                        <h5 class="card-content-title">Position ${item.country}</h5>
-                                        <p class="card-content-des">Current team: ${item.country}</p>
-                                    </div>
-                                </div>                                                                                                        
-                                    `;
-                let cardContainer1 = document.querySelector('#card-container1');
-                cardContainer1.appendChild(card);
-            });
-             //data clubs
-            data.clubs.forEach(item => {
-                let allCard = document.createElement('div');
-                let card = document.createElement('a');
-                card.className = 'card';
-                card.innerHTML = `                                                                                                            
+            data.players.forEach((item, i) => {
+                if (i < 5) {
+                    let allCard = document.createElement('div');
+                    let card = document.createElement('a');
+                    card.classList.add('card', 'card5');
+                    card.innerHTML = `                                                                                                            
                                 <div class="card-image">
                                     <img src="./assets/images/${item.image}" alt="${item.image}">
                                     </div>
                                     <div class="card-img-overlay">
                                     <h4 class="card-logo">${item.name}</h4>
                                     <div class="card-content">
-                                        <h5 class="card-content-title">Position ${item.country}</h5>
-                                        <p class="card-content-des">Current team: ${item.tournament}</p>
+                                        <h5 class="card-content-title">${item.position}</h5>
+                                        <p class="card-content-des">${item.club}</p>
                                     </div>
                                 </div>                                                                                                        
                                     `;
-                let cardContainer1 = document.querySelector('#card-container2');
-                cardContainer1.appendChild(card);
+                    let cardContainer1 = document.querySelector('#card-container');
+                    cardContainer1.appendChild(card);
+                }
             });
-            //data matches
-            data.matches.forEach(item => {
-                let matchItem = document.createElement('div');
-                matchItem.className = 'match-item';
-                matchItem.innerHTML = `                                                                                                            
+            //data tournaments
+            data.tournaments.forEach((item, i) => {
+                if (i < 5) {
+                    let allCard = document.createElement('div');
+                    let card = document.createElement('a');
+                    card.classList.add('card', 'cardWide');
+                    card.innerHTML = `                                                                                                            
+                                    <div class="card-image">
+                                        <img src="./assets/images/${item.logo}" alt="${item.logo}">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                        <h4 class="card-logo">${item.name}</h4>
+                                        <div class="card-content">
+                                            <h5 class="card-content-title">${item.country}</h5>
+                                            <p class="card-content-des">${item.country}</p>
+                                        </div>
+                                    </div>                                                                                                        
+                                        `;
+                    let cardContainer1 = document.querySelector('#card-container1');
+                    cardContainer1.appendChild(card);
+                }
+            });
+            //data clubs
+            data.clubs.forEach((item, i) => {
+                if (i < 10) {
+                    let allCard = document.createElement('div');
+                    let card = document.createElement('a');
+                    card.classList.add('card', 'card5');
+                    card.innerHTML = `                                                                                                            
+                                    <div class="card-image">
+                                        <img src="./assets/images/${item.image}" alt="${item.image}">
+                                        </div>
+                                        <div class="card-img-overlay">
+                                        <h4 class="card-logo">${item.name}</h4>
+                                        <div class="card-content">
+                                            <h5 class="card-content-title">${item.country}</h5>
+                                            <p class="card-content-des">${item.tournament}</p>
+                                        </div>
+                                    </div>                                                                                                        
+                                    `;
+                    let cardContainer1 = document.querySelector('#card-container2');
+                    cardContainer1.appendChild(card);
+                }
+            });
+            //data matches-result
+            data.matches.forEach((item, i) => {
+                if (i < 5) {
+                    let matchItem = document.createElement('div');
+                    matchItem.className = 'match-item';
+                    matchItem.innerHTML = `                                                                                                            
                                 <div class="match-time">
                                 ${item.time}
                                 </div>
@@ -166,8 +184,47 @@ window.onload = function () {
                                     </div>            
                                 </div>                                                                                      
                                 `;
-                let cardContainer1 = document.querySelector('#matchResult');
-                cardContainer1.appendChild(matchItem);
+                    let cardContainer1 = document.querySelector('#matchResult');
+                    cardContainer1.appendChild(matchItem);
+                }
+            });
+            //data matches-shedule
+            data.matches.forEach((item, i) => {
+                if (i >= 5 && i < 10) {
+                    let matchItem = document.createElement('div');
+                    matchItem.className = 'match-item';
+                    matchItem.innerHTML = `                                                                                                            
+                                    <div class="match-time">
+                                    ${item.time}
+                                    </div>
+                                    <div class="all-team">
+                                        <div class="team1">
+                                            <div class="team-name1">
+                                            ${item.team1}
+                                            </div>
+                                            <div class="team-logo">
+                                                <img src="./assets/images/${item.logo1}" alt="arsenal.png">
+                                            </div>
+                                            <div class="team-score">
+                                            ${item.score1}
+                                            </div>
+                                        </div>
+                                        <div class="team2">
+                                            <div class="team-score">
+                                            ${item.score2}
+                                            </div>
+                                            <div class="team-logo">
+                                                <img src="./assets/images/${item.logo2}" alt="barcelona2.png">
+                                            </div>
+                                            <div class="team-name2">
+                                            ${item.team2}
+                                            </div>    
+                                        </div>            
+                                    </div>                                                                                      
+                                    `;
+                    let cardContainer1 = document.querySelector('#matchSchedule');
+                    cardContainer1.appendChild(matchItem);
+                }
             });
         });
 

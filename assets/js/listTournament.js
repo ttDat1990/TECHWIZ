@@ -15,6 +15,7 @@ var loadTournament = function (event) {
     matchWrapper.innerHTML = '';
 
     let cardTournamentWrapper = document.querySelector('#cardWrapper');
+    cardTournamentWrapper.className = 'padding100';
     var tournamentContainer = document.createElement('div');
     tournamentContainer.className = 'tournament-container';
     tournamentContainer.id = 'tournament-container';
@@ -22,7 +23,7 @@ var loadTournament = function (event) {
                             <div class="grid">
                                 <div class="list-title-wrapper">
                                     <div class="list-title">
-                                        Best Player
+                                        All Tournaments
                                     </div>
                                     <div class="search-input-wrapper" style="flex: 0;">
                                         <input class="search-input" id="search-input1" type="text" placeholder="Search tounaments by name">
@@ -41,7 +42,7 @@ var loadTournament = function (event) {
 
             data.tournaments.forEach(item => {
                 let card = document.createElement('a');
-                card.className = 'card';
+                card.classList.add('card');
                 card.innerHTML = `                                                                                                            
                                 <div class="card-image">
                                     <img src="./assets/images/${item.logo}" alt="${item.logo}">

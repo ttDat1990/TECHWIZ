@@ -6,7 +6,7 @@
             "nationality": "Argentina",
             "club": "Paris Saint-Germain",
             "position": "Forward",
-            "image": "messi.jpg"
+            "image": "messi.webp"
         },
         {
             "name": "Cristiano Ronaldo",
@@ -14,7 +14,7 @@
             "nationality": "Portugal",
             "club": "Manchester United",
             "position": "Forward",
-            "image": "ronaldo.jpg"
+            "image": "ronaldo.webp"
         },
         {
             "name": "Neymar Jr.",
@@ -38,7 +38,7 @@
             "nationality": "Belgium",
             "club": "Manchester City",
             "position": "Midfielder",
-            "image": "debruyn.jpg"
+            "image": "kevin.jpg"
         },
 
             {
@@ -723,7 +723,7 @@
             "time": "2023-09-02 19:15",
             "tournament": "Serie A",
             "logo1": "acmilan.png",
-            "logo2":"Juventus.png"
+            "logo2":"Juventus"
         },
         {
             "team1": "Chelsea",
@@ -804,7 +804,7 @@
                 "time": "2023-09-25 19:00",
                 "tournament": "La Liga",
                 "logo1": "sevilla.png",
-                "logo2": "Barcelona.png"
+                "logo2": "Barcelona"
             },
             {
                 "team1": "AS Monaco",

@@ -1,26 +1,36 @@
 //list card
 .card-wrapper,.card-wrapper1{
-    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+.padding100{
+    padding-top: 150px;
+}
+
 .player-container,.tournament-container {
-    padding-top: 100px;
+
 }
 
 .list-title-wrapper {
+    background-color: rgba(0, 0, 0, .5);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 50px;
+    
 }
 
 .list-title {
     
-    text-shadow: 0.03em 0.03em 0 #11d8bd;
+    text-shadow: 0.03em 0.03em 0 var(--white-color);
     font-size: 4rem;
     font-weight: 700;
     transition: all 0.3s ease-in-out;
+    color: var(--primary-color);
 
     &:hover {
-        color: var(--primary-color) !important;
+        color: var(--btn-hover-background-color) !important;
     }
     cursor:default;
 }
@@ -32,11 +42,20 @@
     flex-wrap: wrap;
 }
 
+.cardWide{
+    width: 100%!important;
+    height: 200px!important;
+}
+
+.card5{
+    width: 18%!important;
+}
+
 .card {
     display: block;
     position: relative;
     width: 22%;
-    padding-bottom: 35%;
+    height: 400px;
     overflow: hidden;
     box-shadow: 5px 15px 30px #888888;
     transition: transform .2s;
@@ -92,7 +111,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 20px;
-        z-index: 2;
+        z-index: 1;
     }
 
     .card-logo {
@@ -118,5 +137,30 @@
         font-size: var(--font-size-normal);
         color: var(--white-color);
         font-weight: 500;
+    }
+}
+
+//list player dropdown
+.dropdown-find-player{
+    z-index: 999!important;
+    .dropdown-menu {
+        background-color: var(--white-color);
+        position: absolute;
+        top: 13px;
+        left: -130px;
+
+        .search-input-wrapper{
+            margin-bottom: 10px;
+        }
+    
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -13px;
+            left: 0;
+            width: 300px;
+            height: 13px;
+        }
     }
 }

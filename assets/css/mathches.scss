@@ -1,12 +1,12 @@
 .match-wrapper {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px 0;
 }
 
 .match-result, .match-schedule{
     width: 100%;
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .team1, .team2 {
@@ -37,20 +37,25 @@
 }
 
 .match-title {
+    background-color: rgba(0, 0, 0, .5);
     color: transparent !important;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--text-color);
-    text-shadow: 0.03em 0.03em 0 #11d8bd;
+    -webkit-text-stroke-color: var(--white-color);
+    text-shadow: 0.03em 0.03em 0 var(--primary-color);
     font-size: 4rem;
     font-weight: 700;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        color: var(--primary-color) !important;
+        color: var(--btn-hover-background-color) !important;
     }
 
     cursor:default;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .team-logo {
@@ -67,6 +72,7 @@
 .match-time {
     font-size: var(--font-size-small);
     color: var(--white-color);
+    margin: 8px 0;
 }
 
 .team-name1 {
@@ -88,7 +94,8 @@
 
 
 .team-score {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-big);
     color: var(--white-color);
+    font-weight: 500;
     margin: 0 10px;
 }
