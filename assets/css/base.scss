@@ -23,7 +23,10 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    background-color: var(--white-color);
+    background-image: url('/assets/images/bgcontent.jpg');
+    background-repeat: repeat;
+    object-fit: cover;
+    min-height: 100vh;
 }
 
 body {

@@ -43,47 +43,6 @@ btn.on('click', function (e) {
     $('html, body').animate({ scrollTop: 0 }, '300');
 });
 
-
-// Animation trigger on scroll
-
-const options = {
-    rootMargin: '100px',
-    threshold: 0.5
-};
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-            document.getElementById("card").classList.add('animate__fadeInDown', 'animate__animated');
-            document.getElementById("card1").classList.add('animate__fadeInDown', 'animate__animated', 'animate__delay-1s');
-            document.getElementById("card2").classList.add('animate__fadeInDown', 'animate__animated', 'animate__delay-2s');
-            return;
-        }
-        document.getElementById("card").classList.remove('animate__fadeInDown', 'animate__animated');
-        document.getElementById("card1").classList.remove('animate__fadeInDown', 'animate__animated');
-        document.getElementById("card2").classList.remove('animate__fadeInDown', 'animate__animated');
-    });
-}, options);
-
-const observer1 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-            document.getElementById("card3").classList.add('animate__fadeInDown', 'animate__animated');
-            document.getElementById("card4").classList.add('animate__fadeInDown', 'animate__animated', 'animate__delay-1s');
-            document.getElementById("card5").classList.add('animate__fadeInDown', 'animate__animated', 'animate__delay-2s');
-            return;
-        }
-        document.getElementById("card3").classList.remove('animate__fadeInDown', 'animate__animated');
-        document.getElementById("card4").classList.remove('animate__fadeInDown', 'animate__animated');
-        document.getElementById("card5").classList.remove('animate__fadeInDown', 'animate__animated');
-    });
-}, options);
-
-observer.observe(document.querySelector('.card-container'));
-observer1.observe(document.querySelector('.card-container1'));
-
 //Modal Login-Register
 $('#modal-login').click(function () {
     $('#modal-container').removeAttr('class').addClass('modal-login');
@@ -153,3 +112,39 @@ $('#login').click(function () {
         postEnd = posStart;
     });
 })();
+
+//animated when scroll
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Lấy tất cả các phần tử có class name "card"
+var cardElements = document.querySelectorAll('.card');
+
+// Hàm kiểm tra xem một phần tử có trong tầm nhìn không
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Hàm xử lý khi cuộn trang
+function handleScroll() {
+  cardElements.forEach(function(card) {
+    if (isElementInViewport(card)) {
+      card.classList.add('animate__animated', 'animate__fadeInDown'); // Thêm class "visible" vào các thẻ có trong tầm nhìn
+    } else {
+      card.classList.remove('animate__animated', 'animate__fadeInDown'); // Loại bỏ class "visible" khỏi các thẻ không trong tầm nhìn
+    }
+  });
+}
+
+// Gắn sự kiện cuộn trang để gọi hàm xử lý
+window.addEventListener('scroll', handleScroll);
+
+// Gọi hàm một lần ban đầu để kiểm tra các thẻ đã có trong tầm nhìn khi trang tải
+handleScroll();
+  });
