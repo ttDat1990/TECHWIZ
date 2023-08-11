@@ -184,6 +184,10 @@
         margin: 0 auto;
     }
 
+    .main-nav-container{
+        display: none;
+    }
+
     .card-content-title, .card-content-des{
         display: none;
     }
@@ -262,6 +266,17 @@
     }
     .padding100 {
         padding-top: 80px;
+    }
+    .custom-navbar-toggler {
+        display: block;
+    }
+
+    .custom-navbar-collapse {
+        display: none;
+    }
+
+    .custom-navbar-collapse.show {
+        display: block;
     }
 }
 

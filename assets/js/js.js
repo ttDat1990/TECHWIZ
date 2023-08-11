@@ -158,4 +158,12 @@ document.getElementById('mr-link').onclick = function (e) {
     e.preventDefault();
     document.getElementById('matchResult').scrollIntoView({ behavior: 'smooth' });
 };
+//toogle
+document.addEventListener("DOMContentLoaded", function() {
+    const customToggleNavButton = document.getElementById("customToggleNavButton");
+    const customNavbarNav = document.getElementById("customNavbarNav");
 
+    customToggleNavButton.addEventListener("click", function() {
+        customNavbarNav.classList.toggle("show");
+    });
+});

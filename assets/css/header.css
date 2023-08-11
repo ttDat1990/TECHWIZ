@@ -155,7 +155,6 @@
 }
 .modal-background .modal {
   background: white;
-  padding: 50px;
   display: inline-block;
   border-radius: 3px;
   font-weight: 300;
@@ -714,4 +713,252 @@
 #backtop-button.show {
   opacity: 1;
   visibility: visible;
+}
+
+/*--------------------start-footer--------------*/
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #19191c;
+}
+
+.footer-contact {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(116, 116, 116);
+}
+
+.footer-contact-content1 {
+  width: 300px;
+  height: 300px;
+  padding-top: 30px;
+  padding-right: 10px;
+}
+
+.footer-contact-content2 {
+  width: 300px;
+  height: 300px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.footer-contact-content3 {
+  width: 300px;
+  height: 300px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.footer-contact-content4 {
+  width: 300px;
+  height: 300px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+p {
+  color: #a1a1a8;
+  font-size: 1.3rem;
+  font-weight: 500px;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.social-link {
+  height: 70px;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-link a {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+
+.social-link a:hover {
+  color: red;
+}
+
+.link-items {
+  display: flex;
+}
+
+.link-items-1 a {
+  color: #a1a1a8;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  margin-top: 15px;
+}
+
+.link-items-1 a:hover {
+  color: red;
+}
+
+.link-items-2 a {
+  color: #a1a1a8;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+
+.link-items-2 a:hover {
+  color: red;
+}
+
+#input-join {
+  height: 47px;
+  width: 100%;
+  color: #a1a1a8;
+}
+
+#btn-join {
+  height: 50px;
+  width: 97px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #ea110c;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+#btn-join:hover {
+  background-color: #bb0e0a;
+}
+
+.last-footer {
+  padding-top: 25px;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.last-footer-items {
+  margin-top: 10px;
+}
+
+.last-footer-items a {
+  color: #a1a1a8;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.last-footer-items a:hover {
+  color: red;
+}
+
+/*-----------------------------close-footer-------------*/
+.custom-main-nav-container {
+  top: -335px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: relative;
+  display: none;
+}
+
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-navbar-brand {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.custom-navbar-toggler {
+  margin-top: 2px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.custom-toggler-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.custom-navbar-toggler:focus {
+  outline: none;
+}
+
+.custom-navbar-collapse {
+  display: none;
+}
+
+.custom-navbar-collapse.show {
+  display: block;
+  background-color: black;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.custom-navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.custom-nav-item {
+  margin-left: 15px;
+  height: 30px;
+  margin-top: 10px;
+}
+.custom-nav-item a {
+  font-size: var(--font-size-small);
+}
+
+.custom-nav-link {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.custom-nav-link:hover {
+  color: #ccc;
+}
+
+.custom-navbar-brand-img {
+  width: 100px;
 }/*# sourceMappingURL=header.css.map */
