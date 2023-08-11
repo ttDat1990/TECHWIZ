@@ -27,7 +27,7 @@ window.onload = function () {
     grid.innerHTML = `                                    
                         <div class="list-title-wrapper">
                             <div class="list-title">
-                                Best Tournaments
+                                Tournaments
                             </div>
                             <div class="search-input-wrapper" style="flex: 0;">
                                 <button class="search-button" id="listTournament">Find all Tounament</button>
@@ -98,7 +98,7 @@ window.onload = function () {
                                     <h4 class="card-logo">${item.name}</h4>
                                     <div class="card-content">
                                         <h5 class="card-content-title">${item.position}</h5>
-                                        <p class="card-content-des">${item.club}</p>
+                                        
                                     </div>
                                 </div>                                                                                                        
                                     `;
@@ -142,7 +142,7 @@ window.onload = function () {
                                         <h4 class="card-logo">${item.name}</h4>
                                         <div class="card-content">
                                             <h5 class="card-content-title">${item.country}</h5>
-                                            <p class="card-content-des">${item.tournament}</p>
+                                            <p class="card-content-des"></p>
                                         </div>
                                     </div>                                                                                                        
                                     `;

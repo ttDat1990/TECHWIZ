@@ -26,7 +26,7 @@ var loadPlayer = function (event) {
                                         Best Player
                                     </div>
                                     <div class="nav-item dropdown dropdown-find-player">
-                                        <div class="nav-link">Search Player</div>
+                                        <div class="nav-link">Search</div>
                                         <div class="dropdown-menu dropdown-search">
                                             <div class="search-input-wrapper" style="flex: 0;">                                       
                                                 <input class="search-input" id="search-input1" type="text" placeholder="Search player by name">
@@ -60,7 +60,7 @@ var loadPlayer = function (event) {
 
             data.players.forEach(item => {
                 let card = document.createElement('a');
-                card.className = 'card';
+                card.classList.add('card','card3-res');
                 card.innerHTML = `                                                                                                            
                                 <div class="card-image">
                                     <img src="./assets/images/${item.image}" alt="${item.image}">
@@ -95,7 +95,7 @@ var loadPlayer = function (event) {
                 cardContainer.innerHTML = '';
                 filteredData.forEach(item => {
                     let card = document.createElement('a');
-                    card.className = 'card';
+                    card.classList.add('card','card3-res');
                     card.innerHTML = `
                                     <div class="card-image">
                                     <img src="./assets/images/${item.image}" alt="${item.image}">

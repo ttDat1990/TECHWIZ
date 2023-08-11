@@ -25,9 +25,19 @@ var loadTournament = function (event) {
                                     <div class="list-title">
                                         All Tournaments
                                     </div>
-                                    <div class="search-input-wrapper" style="flex: 0;">
-                                        <input class="search-input" id="search-input1" type="text" placeholder="Search tounaments by name">
-                                        <button class="search-button" id="listTounament1">Search</button>
+                                    <div class="nav-item dropdown dropdown-find-player">
+                                        <div class="nav-link">Search</div>
+                                        <div class="dropdown-menu dropdown-search">
+                                            <div class="search-input-wrapper" style="flex: 0;">                                       
+                                                <input class="search-input" id="search-input1" type="text" placeholder="Search by name">
+                                                <button class="search-button" id="listTournament1">Search</button>
+                                            </div>
+                                            <div class="search-input-wrapper" style="flex: 0;">                                       
+                                                <input class="search-input" id="search-input2" type="text" placeholder="Search by country">
+                                                <button class="search-button" id="listTournament2">Search</button>
+                                            </div>
+                                           
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-container" id="card-container">
@@ -42,7 +52,7 @@ var loadTournament = function (event) {
 
             data.tournaments.forEach(item => {
                 let card = document.createElement('a');
-                card.classList.add('card');
+                card.classList.add('card','card3-res');
                 card.innerHTML = `                                                                                                            
                                 <div class="card-image">
                                     <img src="./assets/images/${item.logo}" alt="${item.logo}">
@@ -60,7 +70,7 @@ var loadTournament = function (event) {
             });
         });
 
-    //Loading data search
+    //Loading data search by name
     const loadDataSearch = () => {
         fetch('./data/data.json')
             .then(response => response.json())
@@ -77,7 +87,7 @@ var loadTournament = function (event) {
                 cardContainer.innerHTML = '';
                 filteredData.forEach(item => {
                     let card = document.createElement('a');
-                    card.className = 'card';
+                    card.classList.add('card','card3-res');
                     card.innerHTML = `
                                     <div class="card-image">
                                     <img src="./assets/images/${item.logo}" alt="${item.logo}">
@@ -94,9 +104,47 @@ var loadTournament = function (event) {
                 });
             });
     }
-    //Click search -> Loading data search
-    let listTounament1 = document.querySelector('#listTounament1');
+    //Click search -> Loading data search byname
+    let listTounament1 = document.querySelector('#listTournament1');
     listTounament1.addEventListener('click', loadDataSearch);
+
+//Loading data search by country
+const loadDataSearchCountry = () => {
+    fetch('./data/data.json')
+        .then(response => response.json())
+        .then(data => {
+            //remove oldcard
+            var oldCard = document.getElementsByClassName("card");
+            while (oldCard.length > 0) {
+                oldCard[0].parentNode.removeChild(oldCard[0]);
+            }
+
+            let searchValue = document.querySelector('#search-input2').value.toLowerCase();
+            let filteredData = data.tournaments.filter(item => item.country.toLowerCase().includes(searchValue));
+            let cardContainer = document.querySelector('#card-container');
+            cardContainer.innerHTML = '';
+            filteredData.forEach(item => {
+                let card = document.createElement('a');
+                card.classList.add('card','card3-res');
+                card.innerHTML = `
+                                <div class="card-image">
+                                <img src="./assets/images/${item.logo}" alt="${item.logo}">
+                                </div>
+                                <div class="card-img-overlay">
+                                <h4 class="card-logo">${item.name}</h4>
+                                <div class="card-content">
+                                    <h5 class="card-content-title">Position ${item.country}</h5>
+                                    <p class="card-content-des">Current team: ${item.country}</p>
+                                </div>
+                                </div>
+                            `;
+                cardContainer.appendChild(card);
+            });
+        });
+}
+//Click search -> Loading data search
+let listTounament2 = document.querySelector('#listTournament2');
+listTounament2.addEventListener('click', loadDataSearchCountry);
 
 };
 

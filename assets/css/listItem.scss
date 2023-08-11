@@ -146,8 +146,8 @@
     .dropdown-menu {
         background-color: var(--white-color);
         position: absolute;
-        top: 13px;
-        left: -130px;
+        top: 30x;
+        left: -200px;
 
         .search-input-wrapper{
             margin-bottom: 10px;
@@ -161,6 +161,15 @@
             left: 0;
             width: 300px;
             height: 13px;
+        }
+    }
+    .nav-link{
+        font-size: var(--font-size-big);
+        padding: 10px;
+        background-color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        &:hover{
+            background-color: var(--white-color);
         }
     }
 }

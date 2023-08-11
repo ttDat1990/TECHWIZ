@@ -120,8 +120,8 @@
 .dropdown-find-player .dropdown-menu {
   background-color: var(--white-color);
   position: absolute;
-  top: 13px;
-  left: -130px;
+  top: 30x;
+  left: -200px;
 }
 .dropdown-find-player .dropdown-menu .search-input-wrapper {
   margin-bottom: 10px;
@@ -134,4 +134,13 @@
   left: 0;
   width: 300px;
   height: 13px;
+}
+.dropdown-find-player .nav-link {
+  font-size: var(--font-size-big);
+  padding: 10px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.dropdown-find-player .nav-link:hover {
+  background-color: var(--white-color);
 }/*# sourceMappingURL=listItem.css.map */

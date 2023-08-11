@@ -10,6 +10,9 @@
     --font-size-normal: 1.5rem;
     --font-size-big: 2rem;
     --font-size-small: 1.3rem;
+    --font-size-small1: 1rem;
+    --font-size-small2: 0.8rem;
+    --font-size-small3: 0.5rem;
     --animate-delay: 0.5s;
 
 }
@@ -23,16 +26,17 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    background-image: url('/assets/images/bgcontent.jpg');
-    background-repeat: repeat;
-    object-fit: cover;
-    min-height: 100vh;
+    
 }
 
 body {
     &.modal-active {
         overflow: hidden;
     }
+    background-image: url('/assets/images/bgcontent.jpg');
+    background-repeat: repeat;
+    object-fit: cover;
+    width: 100%;
 }
 
 .grid {
