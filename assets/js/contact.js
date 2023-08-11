@@ -14,42 +14,23 @@ var loadContact = function (event) {
     var matchWrapper = document.getElementById("matchWrapper");
     matchWrapper.innerHTML = '';
 
-    let cardContainer = document.querySelector('#cardWrapper');
-    cardContainer.className = 'padding100';
-    var playerContainer = document.createElement('div');
-    playerContainer.className = 'player-container';
-    playerContainer.id = 'player-container';
-    playerContainer.innerHTML = `                                    
-                            <div class="grid">
-                                <div class="list-title-wrapper">
-                                    <div class="list-title">
-                                        Best Player
-                                    </div>
-                                    <div class="nav-item dropdown dropdown-find-player">
-                                        <div class="nav-link">Search</div>
-                                        <div class="dropdown-menu dropdown-search">
-                                            <div class="search-input-wrapper" style="flex: 0;">                                       
-                                                <input class="search-input" id="search-input1" type="text" placeholder="Search player by name">
-                                                <button class="search-button" id="listPlayer1">Search</button>
-                                            </div>
-                                            <div class="search-input-wrapper" style="flex: 0;">                                       
-                                                <input class="search-input" id="search-input2" type="text" placeholder="Search player by nationality">
-                                                <button class="search-button" id="listPlayer2">Search</button>
-                                            </div>
-                                            <div class="search-input-wrapper" style="flex: 0;">                                       
-                                                <input class="search-input" id="search-input3" type="text" placeholder="Search player by club">
-                                                <button class="search-button" id="listPlayer3">Search</button>
-                                            </div>
-                                            <div class="search-input-wrapper" style="flex: 0;">                                       
-                                                <input class="search-input" id="search-input4" type="text" placeholder="Search player by position">
-                                                <button class="search-button" id="listPlayer4">Search</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
+    var contactGrid = document.createElement('div');
+    contactGrid.className = 'grid';
+    contactGrid.id = 'contactGrid';
+    contactGrid.innerHTML = `                                    
+                            <div class="contact-container">
+                                <div class="parag-1">
+                                    <h2>Contact Us</h2>
+                                    <p>
+                                        Thank you for visiting our website! We are dedicated to providing the latest updates and information on soccer matches, players, and teams. If you have any questions or comments, please feel free to contact us using the form below.
+                                    </p>
                                 </div>
-                                <div class="card-container" id="card-container">
-                                </div>   
+                                <div class="parag-2">
+                                    <h2>Get in Touch</h2>
+                                    <p>
+                                        Thank you for visiting our website! We are dedicated to providing the latest updates and information on soccer matches, players, and teams. If you have any questions or comments, please feel free to contact us using the form below.
+                                    </p>
+                                </div>
                             </div>                                                              
                             `;
     cardContainer.appendChild(playerContainer);
