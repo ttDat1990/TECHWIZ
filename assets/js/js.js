@@ -88,7 +88,7 @@ $('#login').click(function () {
 
 //Sticky Navbar auto hidden
 (function () {
-    var $win = $(window), 
+    var $win = $(window),
         box = $(document),
         navCon = $('.main-nav-container'),
         postEnd = 0;
@@ -100,11 +100,11 @@ $('#login').click(function () {
             navCon.addClass('hidden');
             navCon.removeClass('offset-nav');
         }
-        else {           
+        else {
             if ($win.scrollTop() == 0) {
                 navCon.removeClass('hidden');
                 navCon.removeClass('offset-nav');
-            } else{
+            } else {
                 navCon.removeClass('hidden');
                 navCon.addClass('offset-nav');
             }
@@ -116,35 +116,46 @@ $('#login').click(function () {
 //animated when scroll
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Lấy tất cả các phần tử có class name "card"
-var cardElements = document.querySelectorAll('.card');
+    var cardElements = document.querySelectorAll('.card');
 
-// Hàm kiểm tra xem một phần tử có trong tầm nhìn không
-function isElementInViewport(element) {
-  var rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-// Hàm xử lý khi cuộn trang
-function handleScroll() {
-  cardElements.forEach(function(card) {
-    if (isElementInViewport(card)) {
-      card.classList.add('animate__animated', 'animate__fadeInDown'); // Thêm class "visible" vào các thẻ có trong tầm nhìn
-    } else {
-      card.classList.remove('animate__animated', 'animate__fadeInDown'); // Loại bỏ class "visible" khỏi các thẻ không trong tầm nhìn
+    // Hàm kiểm tra xem một phần tử có trong tầm nhìn không
+    function isElementInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
     }
-  });
-}
 
-// Gắn sự kiện cuộn trang để gọi hàm xử lý
-window.addEventListener('scroll', handleScroll);
+    // Hàm xử lý khi cuộn trang
+    function handleScroll() {
+        cardElements.forEach(function (card) {
+            if (isElementInViewport(card)) {
+                card.classList.add('animate__animated', 'animate__fadeInDown'); // Thêm class "visible" vào các thẻ có trong tầm nhìn
+            } else {
+                card.classList.remove('animate__animated', 'animate__fadeInDown'); // Loại bỏ class "visible" khỏi các thẻ không trong tầm nhìn
+            }
+        });
+    }
 
-// Gọi hàm một lần ban đầu để kiểm tra các thẻ đã có trong tầm nhìn khi trang tải
-handleScroll();
-  });
+    // Gắn sự kiện cuộn trang để gọi hàm xử lý
+    window.addEventListener('scroll', handleScroll);
+
+    // Gọi hàm một lần ban đầu để kiểm tra các thẻ đã có trong tầm nhìn khi trang tải
+    handleScroll();
+});
+
+//smooth scroll
+document.getElementById('ms-link').onclick = function (e) {
+    e.preventDefault();
+    document.getElementById('matchSchedule').scrollIntoView({ behavior: 'smooth' });
+};
+document.getElementById('mr-link').onclick = function (e) {
+    e.preventDefault();
+    document.getElementById('matchResult').scrollIntoView({ behavior: 'smooth' });
+};
+

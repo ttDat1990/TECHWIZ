@@ -120,7 +120,7 @@ window.onload = function () {
                                         <h4 class="card-logo">${item.name}</h4>
                                         <div class="card-content">
                                             <h5 class="card-content-title">${item.country}</h5>
-                                            <p class="card-content-des">${item.country}</p>
+                                            <p class="card-content-des">${item.content}</p>
                                         </div>
                                     </div>                                                                                                        
                                         `;

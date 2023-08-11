@@ -9,6 +9,8 @@
         max-width: 100%;
         margin: 0 auto;
     }
+
+    
 }
 
 //desktop
@@ -136,12 +138,7 @@
     .content-title {
         font-size: var(--font-size-small);
     }
-
-    .slider{
-        height: 55vh;
-    }
     
-
     .nav-end {
         display: none;
     }
@@ -190,7 +187,9 @@
     .card-content-title, .card-content-des{
         display: none;
     }
-
+    .slider{
+        height: 40vh;
+    }
     .content-title {
         display: none;
     }

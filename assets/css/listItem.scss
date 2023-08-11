@@ -28,7 +28,7 @@
     font-weight: 700;
     transition: all 0.3s ease-in-out;
     color: var(--primary-color);
-
+    padding-left: 10px;
     &:hover {
         color: var(--btn-hover-background-color) !important;
     }
@@ -66,7 +66,11 @@
     // }
 
     &:hover .card-content {
-        transform: translateY(-20px);
+        transform: translateY(-5px);
+    }
+
+    &:hover .card-logo{
+        transform: translateY(5px);
     }
 
     &:hover {
@@ -80,10 +84,9 @@
         transition: all .3s ease-in-out;
 
         &:hover {
-
             .card-content {
-                transform: translateY(50px);
-            }
+                transform: translateY(30px);
+            }          
         }
 
         img {
@@ -120,6 +123,7 @@
         font-weight: 700;
         margin: 0;
         line-height: 45px;
+        transition: all .3s ease-in-out;
     }
 
     .card-content {
@@ -137,6 +141,10 @@
         font-size: var(--font-size-normal);
         color: var(--white-color);
         font-weight: 500;
+    }
+    .card-logo, .card-content-title, .card-content-des{
+        text-shadow: .2px 0 #000000, -.2px 0 #000000, 0 .2px #000000, 0 -.2px #000000,
+             .1px .1px #000000, -.1px -1px #000000, .1px -.1px #000000, -.1px .1px #000000;
     }
 }
 

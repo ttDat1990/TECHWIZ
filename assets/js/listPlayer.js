@@ -14,12 +14,10 @@ var loadPlayer = function (event) {
     var matchWrapper = document.getElementById("matchWrapper");
     matchWrapper.innerHTML = '';
 
-    let cardContainer = document.querySelector('#cardWrapper');
-    cardContainer.className = 'padding100';
-    var playerContainer = document.createElement('div');
-    playerContainer.className = 'player-container';
-    playerContainer.id = 'player-container';
-    playerContainer.innerHTML = `                                    
+    var contactContainer = document.createElement('div');
+    contactContainer.className = 'contact-container';
+    contactContainer.id = 'contact-container';
+    contactContainer.innerHTML = `                                    
                             <div class="grid">
                                 <div class="list-title-wrapper">
                                     <div class="list-title">

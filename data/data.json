@@ -6,7 +6,8 @@
             "nationality": "Argentina",
             "club": "Paris Saint-Germain",
             "position": "Forward",
-            "image": "messi.webp"
+            "image": "messi.webp",
+            "info":"Lionel Messi is widely regarded as one of the greatest football players of all time. He started his professional career with FC Barcelona, where he spent over 20 years and won numerous accolades, including multiple Ballon d'Or awards. In 2021, he transferred to Paris Saint-Germain, bringing his incredible skills and playmaking abilities to the French club."
         },
         {
             "name": "Cristiano Ronaldo",
@@ -14,7 +15,8 @@
             "nationality": "Portugal",
             "club": "Manchester United",
             "position": "Forward",
-            "image": "ronaldo.webp"
+            "image": "ronaldo.webp",
+            "info":" Cristiano Ronaldo is another football icon often compared to Messi. He has played for several top clubs, including Sporting CP, Manchester United, Real Madrid, Juventus, and now, he's back at Manchester United. Renowned for his goal-scoring prowess, athleticism, and versatility, Ronaldo has consistently been a dominant force in football for over a decade."
         },
         {
             "name": "Neymar Jr.",
@@ -22,7 +24,8 @@
             "nationality": "Brazil",
             "club": "Paris Saint-Germain",
             "position": "Forward",
-            "image": "neymar.jpg"
+            "image": "neymar.jpg",
+            "info":"Neymar Jr. is known for his dazzling dribbling skills and creative style of play. He began his European journey with FC Barcelona before moving to Paris Saint-Germain. As one of the world's most expensive players, Neymar's ability to mesmerize defenders and create scoring opportunities has made him a fan favorite."
         },
         {
             "name": "Robert Lewandowski",
@@ -30,7 +33,8 @@
             "nationality": "Poland",
             "club": "Bayern Munich",
             "position": "Forward",
-            "image": "lewandowski.jpg"
+            "image": "lewandowski.jpg",
+            "info":"Robert Lewandowski is a prolific striker known for his clinical finishing and goal-scoring record. He has been a key figure for Bayern Munich, consistently leading the Bundesliga's scoring charts. With his strength, positioning, and aerial ability, Lewandowski is a constant threat inside the penalty area."
         },
         {
             "name": "Kevin De Bruyne",
@@ -38,7 +42,8 @@
             "nationality": "Belgium",
             "club": "Manchester City",
             "position": "Midfielder",
-            "image": "kevin.jpg"
+            "image": "kevin.jpg",
+            "info":"Kevin De Bruyne is a versatile midfielder celebrated for his passing accuracy, vision, and ability to dictate the tempo of the game. He has been instrumental in Manchester City's successes, contributing both goals and assists. De Bruyne's technical skills and playmaking capabilities make him one of the premier midfielders in the world."
         },
 
             {
@@ -47,7 +52,8 @@
                 "nationality": "Spain",
                 "club": "Vissel Kobe",
                 "position": "Midfielder",
-                "image": "iniesta.jpg"
+                "image": "iniesta.jpg",
+                "info":" Andrés Iniesta is a legendary Spanish midfielder known for his exceptional ball control, vision, and ability to create opportunities on the field. He spent the majority of his career at FC Barcelona, where he became a key figure in the club's golden era, winning numerous domestic and international titles. Iniesta's precise passing and ability to score crucial goals in important moments have left an indelible mark on the football world."
             },
             {
                 "name": "Arjen Robben",
@@ -55,7 +61,8 @@
                 "nationality": "Netherlands",
                 "club": "Groningen",
                 "position": "Forward",
-                "image": "robben.jpg"
+                "image": "robben.jpg",
+                "info":"Arjen Robben is a Dutch winger known for his explosive pace, dribbling skills, and cutting inside to unleash powerful shots with his left foot. He has played for several top clubs, including Chelsea, Real Madrid, and Bayern Munich. Robben's ability to create goal-scoring opportunities from wide positions and his penchant for scoring memorable goals make him a fan favorite."
             },
             {
                 "name": "Sergio Ramos",
@@ -63,7 +70,8 @@
                 "nationality": "Spain",
                 "club": "Paris Saint-Germain",
                 "position": "Defender",
-                "image": "ramos.jpg"
+                "image": "ramos.jpg",
+                "info":" Sergio Ramos is a Spanish central defender known for his leadership, defensive prowess, and ability to score crucial goals, particularly from set pieces. He spent the majority of his career at Real Madrid, where he became the club's captain and won numerous domestic and international trophies. Ramos is known for his physicality, aerial ability, and his knack for rising to the occasion in high-stakes matches."
             },
             {
                 "name": "Zlatan Ibrahimović",
@@ -71,7 +79,8 @@
                 "nationality": "Sweden",
                 "club": "AC Milan",
                 "position": "Forward",
-                "image": "ibrahimovic.jpg"
+                "image": "ibrahimovic.jpg",
+                "info":" Zlatan Ibrahimović is a charismatic and skilled Swedish forward known for his incredible goal-scoring ability, creativity, and flair on the pitch. He has played for numerous top clubs across Europe, leaving his mark with his unique style of play and audacious goals. Ibrahimović's towering height, technical skills, and memorable quotes have made him one of the most colorful personalities in football."
             },
 {
     "name": "Kylian Mbappé",
@@ -79,7 +88,8 @@
     "nationality": "France",
     "club": "Paris Saint-Germain",
     "position": "Forward",
-    "image": "mbappe.jpg"
+    "image": "mbappe.jpg",
+    "info": "Kylian Mbappé is a young French sensation known for his blistering speed, dribbling skills, and clinical finishing. He rose to prominence at AS Monaco and quickly became one of the most sought-after talents in the world. With his incredible agility and ability to perform under pressure, Mbappé has already achieved remarkable success and is seen as a future superstar of the sport."
 },
 {
     "name": "Virgil van Dijk",
@@ -87,7 +97,8 @@
     "nationality": "Netherlands",
     "club": "Liverpool",
     "position": "Defender",
-    "image": "vandijk.jpg"
+    "image": "vandijk.jpg",
+    "info": "Virgil van Dijk is a commanding Dutch central defender known for his aerial ability, strength, and exceptional defensive skills. He played a pivotal role in Liverpool's recent successes, including winning the Premier League and the UEFA Champions League. Van Dijk's leadership, composure on the ball, and ability to organize the defense have made him one of the most respected defenders in the modern game."
 },
 {
     "name": "Bruno Fernandes",
@@ -95,7 +106,8 @@
     "nationality": "Portugal",
     "club": "Manchester United",
     "position": "Midfielder",
-    "image": "fernandes.jpg"
+    "image": "fernandes.jpg",
+    "info": "Bruno Fernandes is a dynamic Portuguese midfielder known for his playmaking ability, vision, and knack for scoring goals from midfield. He joined Manchester United from Sporting CP and quickly established himself as a key player for the club. Fernandes's passing range, creativity, and set-piece prowess have made him a crucial contributor to both goals and assists."
 },
 {
     "name": "Erling Haaland",
@@ -103,7 +115,8 @@
     "nationality": "Norway",
     "club": "Borussia Dortmund",
     "position": "Forward",
-    "image": "haaland.jpg"
+    "image": "haaland.jpg",
+    "info": "Erling Haaland is a young Norwegian striker known for his incredible goal-scoring record, athleticism, and speed. He burst onto the scene with Red Bull Salzburg before moving to Borussia Dortmund. Haaland's physical presence, finishing ability, and poacher's instinct make him one of the most promising talents in world football."
 },
 {
     "name": "Toni Kroos",
@@ -111,7 +124,8 @@
     "nationality": "Germany",
     "club": "Real Madrid",
     "position": "Midfielder",
-    "image": "kroos.jpg"
+    "image": "kroos.jpg",
+    "info": "Toni Kroos is a highly skilled German midfielder known for his exceptional passing accuracy, vision, and tactical intelligence. He has been a vital part of Real Madrid's midfield, contributing to the team's multiple UEFA Champions League triumphs. Kroos's ability to dictate the tempo of the game and execute precise long-range passes sets him apart as a world-class playmaker."
 },
 {
     "name": "Gareth Bale",
@@ -119,7 +133,8 @@
     "nationality": "Wales",
     "club": "Tottenham Hotspur",
     "position": "Forward",
-    "image": "bale.jpg"
+    "image": "bale.jpg",
+    "info": "Gareth Bale is a Welsh forward known for his explosive speed, dribbling ability, and powerful strikes. He initially made a name for himself at Tottenham Hotspur before moving to Real Madrid in a then-world record transfer. After returning to Tottenham, Bale's skillset, including his ability to score stunning goals, continues to make him a thrilling presence on the field."
 },
 {
     "name": "Manuel Neuer",
@@ -127,7 +142,8 @@
     "nationality": "Germany",
     "club": "Bayern Munich",
     "position": "Goalkeeper",
-    "image": "neuer.jpg"
+    "image": "neuer.jpg",
+    "info": "Manuel Neuer is a highly regarded German goalkeeper known for his exceptional shot-stopping abilities, commanding presence, and proficiency with the ball at his feet. He has been a key figure for both Bayern Munich and the German national team. Neuer's sweeping skills, ability to read the game, and leadership on and off the field have established him as one of the best goalkeepers in the world."
 },
 {
     "name": "Eden Hazard",
@@ -135,7 +151,8 @@
     "nationality": "Belgium",
     "club": "Real Madrid",
     "position": "Forward",
-    "image": "hazard.jpg"
+    "image": "hazard.jpg",
+    "info": "Eden Hazard is a Belgian forward known for his dribbling skills, flair, and creativity. He made a name for himself at Chelsea before transferring to Real Madrid. Hazard's ability to take on defenders, create scoring opportunities, and contribute with goals has made him a sought-after talent and a key player for both club and country."
 },
 {
     "name": "Joshua Kimmich",
@@ -143,7 +160,8 @@
     "nationality": "Germany",
     "club": "Bayern Munich",
     "position": "Midfielder",
-    "image": "kimmich.jpg"
+    "image": "kimmich.jpg",
+    "info": "Joshua Kimmich is a versatile German midfielder known for his work rate, passing accuracy, and defensive skills. He has played a crucial role for Bayern Munich and the German national team, often contributing with assists and goals from midfield. Kimmich's ability to control the game's tempo and contribute both defensively and offensively makes him a valuable asset."
 },
 {
     "name": "Harry Kane",
@@ -151,7 +169,8 @@
     "nationality": "England",
     "club": "Tottenham Hotspur",
     "position": "Forward",
-    "image": "kane.jpg"
+    "image": "kane.jpg",
+    "info": "Harry Kane is an English striker known for his clinical finishing, positioning, and ability to score from various distances. He has been a standout performer for Tottenham Hotspur and the England national team. Kane's ability to link up play, create chances for his teammates, and consistently find the back of the net makes him one of the premier forwards in football."
 },
 {
     "name": "Luka Modrić",
@@ -159,7 +178,8 @@
     "nationality": "Croatia",
     "club": "Real Madrid",
     "position": "Midfielder",
-    "image": "modric.jpg"
+    "image": "modric.jpg",
+    "info": "Luka Modrić is a Croatian midfielder known for his incredible technical skills, vision, and playmaking abilities. He has been a linchpin for both Real Madrid and the Croatian national team. Modrić's passing range, ability to control the midfield, and his contributions to Real Madrid's successes, including multiple Champions League titles, have solidified his place as one of the modern era's best midfielders."
 },       
     {
       "name": "Sadio Mané",
@@ -167,7 +187,8 @@
       "nationality": "Senegal",
       "club": "Liverpool",
       "position": "Forward",
-      "image": "sadio_mane.jpg"
+      "image": "sadio_mane.jpg",
+      "info": " Sadio Mané is a skilled Senegalese forward known for his speed, dribbling ability, and goal-scoring prowess. He has been a vital part of Liverpool's attacking force, contributing with crucial goals and assists. Mané's versatility, work rate, and ability to perform in high-pressure situations have made him a key player for both his club and the Senegalese national team."
     },
     {
       "name": "Paul Pogba",
@@ -175,7 +196,8 @@
       "nationality": "France",
       "club": "Manchester United",
       "position": "Midfielder",
-      "image": "paul_pogba.jpg"
+      "image": "paul_pogba.jpg",
+      "info": "Paul Pogba is a talented French midfielder known for his physicality, passing range, and creativity. He has a unique ability to dominate midfield battles and provide assists from deep positions. Pogba's combination of flair, vision, and athleticism has made him a key figure for both Manchester United and the French national team."
     },
     {
       "name": "Alisson Becker",
@@ -183,7 +205,8 @@
       "nationality": "Brazil",
       "club": "Liverpool",
       "position": "Goalkeeper",
-      "image": "alisson_becker.jpg"
+      "image": "alisson_becker.jpg",
+      "info": "Alisson Becker is a Brazilian goalkeeper known for his shot-stopping abilities, command of the penalty area, and distribution skills. He has played a crucial role in Liverpool's successes, helping the team win domestic and international trophies. Alisson's ability to make crucial saves and provide stability at the back has established him as one of the top goalkeepers in the world."
     },
     {
       "name": "Karim Benzema",
@@ -191,7 +214,8 @@
       "nationality": "France",
       "club": "Real Madrid",
       "position": "Forward",
-      "image": "karim_benzema.jpg"
+      "image": "karim_benzema.jpg",
+      "info": "Karim Benzema is a skilled French forward known for his link-up play, technical ability, and consistent goal-scoring record. He has been a key figure for Real Madrid's attack and has played alongside some of the greatest footballers in the world. Benzema's ability to create opportunities for his teammates and find the back of the net makes him a valuable asset for both club and country."
     },
     {
       "name": "Kai Havertz",
@@ -199,7 +223,8 @@
       "nationality": "Germany",
       "club": "Chelsea",
       "position": "Midfielder",
-      "image": "kai_havertz.jpg"
+      "image": "kai_havertz.jpg",
+      "info": " Kai Havertz is a young and promising German midfielder known for his versatility, technical skills, and vision. He joined Chelsea from Bayer Leverkusen and quickly established himself as a dynamic presence in midfield. Havertz's ability to play as an attacking midfielder or in a deeper role, combined with his ability to score and create goals, makes him a player to watch in the coming years."
     },
     {
       "name": "Leroy Sané",
@@ -207,7 +232,8 @@
       "nationality": "Germany",
       "club": "Bayern Munich",
       "position": "Forward",
-      "image": "leroy_sane.jpg"
+      "image": "leroy_sane.jpg",
+      "info": "Leroy Sané is a talented German forward known for his speed, dribbling ability, and versatility in attack. He joined Bayern Munich from Manchester City, bringing his flair and creativity to the German club. Sané's ability to take on defenders and create scoring opportunities for himself and his teammates makes him a valuable asset in the final third."
     },
     {
       "name": "Kalidou Koulibaly",
@@ -215,7 +241,8 @@
       "nationality": "Senegal",
       "club": "Napoli",
       "position": "Defender",
-      "image": "kalidou_koulibaly.jpg"
+      "image": "kalidou_koulibaly.jpg",
+      "info": "Kalidou Koulibaly is a strong and commanding Senegalese central defender known for his defensive prowess, aerial ability, and ball-playing skills. He has been a key player for Napoli, showcasing his ability to read the game and provide solidity at the back. Koulibaly's physical presence and leadership make him a sought-after talent in the world of football."
     },
     {
       "name": "Marcus Rashford",
@@ -223,7 +250,8 @@
       "nationality": "England",
       "club": "Manchester United",
       "position": "Forward",
-      "image": "marcus_rashford.jpg"
+      "image": "marcus_rashford.jpg",
+      "info": " Marcus Rashford is an English forward known for his pace, dribbling skills, and goal-scoring ability. He emerged through the ranks at Manchester United and has become a key figure for both the club and the England national team. Rashford's ability to play as a winger or a central striker, as well as his contributions off the field in social causes, have made him a beloved figure among fans."
     },
     {
       "name": "Marquinhos",
@@ -231,7 +259,8 @@
       "nationality": "Brazil",
       "club": "Paris Saint-Germain",
       "position": "Defender",
-      "image": "marquinhos.jpg"
+      "image": "marquinhos.jpg",
+      "info": "Marquinhos is a Brazilian central defender known for his defensive versatility, composure on the ball, and leadership skills. He has been an integral part of Paris Saint-Germain's defense and has also showcased his ability to play as a defensive midfielder. Marquinhos's ability to read the game, make crucial interceptions, and contribute to building from the back make him a valuable asset for his club and country."
     },
     {
       "name": "Romelu Lukaku",
@@ -239,7 +268,8 @@
       "nationality": "Belgium",
       "club": "Chelsea",
       "position": "Forward",
-      "image": "romelu_lukaku.jpg"
+      "image": "romelu_lukaku.jpg",
+      "info": "Romelu Lukaku is a powerful Belgian forward known for his physicality, finishing ability, and goal-scoring record. He returned to Chelsea from Inter Milan, where he had a prolific spell. Lukaku's strength, ability to hold up play, and clinical finishing inside the penalty area make him a potent goal threat for his club and the Belgian national team."
     }
   
 
@@ -249,7 +279,7 @@
     "tournaments": [
         {
             "name": "FIFA World Cup",
-            "country": "Various",
+            "country": "Qatar",
             "logo": "fifa.png",
             "content": "The premier international soccer tournament held every four years, showcasing teams from various countries."
         },
@@ -301,7 +331,7 @@
 
             {
                 "name": "AFC Asian Cup",
-                "country": "Various",
+                "country": "Qatar",
                 "logo": "asiancup.png",
                 "content":"The leading national team competition in Asia, uniting diverse football cultures and talents from across the continent."
             },
@@ -375,10 +405,67 @@
             }, 
             {
                 "name": "FIFA Club World Cup",
-                "country": "Various",
+                "country": "Maroc",
                 "logo": "clubworldcup.png",
                 "content":"A global tournament featuring the champions of each confederation, showcasing top club teams from around the world."
-            }
+            },
+            
+                {
+                    "name": "Copa Sudamericana",
+                    "country": "South America",
+                    "logo": "sudamericana.png",
+                    "content": "South America's secondary club competition, providing a platform for teams to showcase their talent on the international stage."
+                },
+                {
+                    "name": "Scottish Premiership",
+                    "country": "Scotland",
+                    "logo": "scotland.png",
+                    "content": "Scotland's top-tier football league, featuring historic clubs and passionate football culture."
+                },
+                {
+                    "name": "Russian Premier League",
+                    "country": "Russia",
+                    "logo": "russia.png",
+                    "content": "Russia's premier football competition, hosting a mix of local and international talents."
+                },
+                {
+                    "name": "Chinese Super League",
+                    "country": "China",
+                    "logo": "china.png",
+                    "content": "China's top professional football league, aiming to develop football and attract international stars."
+                },
+                {
+                    "name": "Swiss Super League",
+                    "country": "Switzerland",
+                    "logo": "switzerland.png",
+                    "content": "Switzerland's top football league, offering competitive matches and showcasing Swiss football talent."
+                },
+                {
+                    "name": "Argentinian Primera División",
+                    "country": "Argentina",
+                    "logo": "argentina.png",
+                    "content": "Argentina's top-tier league, known for its passionate fanbase and producing legendary footballers."
+                },
+                {
+                    "name": "South African Premier Division",
+                    "country": "South Africa",
+                    "logo": "southafrica.png",
+                    "content": "South Africa's leading football league, contributing to the growth of football on the African continent."
+                },
+                {
+                    "name": "Ukrainian Premier League",
+                    "country": "Ukraine",
+                    "logo": "ukraine.png",
+                    "content": "Ukraine's top football competition, featuring local talent and attracting international attention."
+                },
+                {
+                    "name": "Saudi Professional League",
+                    "country": "Saudi Arabia",
+                    "logo": "saudi.png",
+                    "content": "Saudi Arabia's premier football league, hosting local and international players."
+                }
+            
+            
     ],
     "clubs": [
         {
@@ -386,7 +473,8 @@
             "image": "psg.png",
             "tournament": "UEFA Champions League",
             "country": "France",
-            "points": 75
+            "points": 75,
+            "info": "Paris Saint-Germain, commonly referred to as PSG, is a prominent football club based in Paris, France. Known for its attacking style of play and star-studded squad, PSG has consistently been a strong contender in both domestic and international competitions. With a rich history of success in Ligue 1 and ambitious goals in the UEFA Champions League, PSG continues to attract attention with its world-class talent and impressive performances. "       
         },
 
         {
@@ -394,7 +482,8 @@
             "image": "bayern.png",
             "tournament": "Bundesliga",
             "country": "Germany",
-            "points": 82
+            "points": 82,
+            "info": "Bayern Munich is a football powerhouse located in Munich, Germany. Renowned for its dominance in both domestic and international competitions, Bayern Munich is a club with a storied history and a global fanbase. The team's consistent success in the Bundesliga and strong showings in the UEFA Champions League reflect its commitment to excellence, with a blend of seasoned veterans and emerging talents driving its achievements."
         },
 
         {
@@ -402,7 +491,8 @@
             "image": "juventus.png",
             "tournament": "Serie A",
             "country": "Italy",
-            "points": 76
+            "points": 76,
+            "info": "Juventus, based in Turin, Italy, is a football club with a rich history and tradition. A dominant force in Serie A, Juventus is known for its defensive solidity, tactical prowess, and commitment to success. The club's track record of winning multiple Serie A titles and its international recognition showcase its dedication to maintaining a high level of performance and competing at the highest level."
         },
 
             {
@@ -410,7 +500,8 @@
                 "image": "liverpool.png",
                 "tournament": "Premier League",
                 "country": "England",
-                "points": 82
+                "points": 82,
+                "info": "Liverpool Football Club, based in Liverpool, England, is synonymous with passionate fans and historic achievements. Known as \"The Reds,\" Liverpool has a storied legacy in English football, with a collection of league titles and European successes. The team's high-intensity pressing style, iconic anthem, and charismatic manager have contributed to its resurgence as a major force in both domestic and international competitions."
             },
 
             {
@@ -418,14 +509,16 @@
                 "image": "barcelona.png",
                 "tournament": "La Liga",
                 "country": "Spain",
-                "points": 85
+                "points": 85,
+                "info": " FC Barcelona, often referred to simply as \"Barça,\" is a football club located in Barcelona, Spain. Known for its possession-based style of play and renowned youth academy, Barcelona has left an indelible mark on the football world. The club's commitment to nurturing homegrown talent and its legacy of success in La Liga and the UEFA Champions League have solidified its position as one of the most iconic and respected clubs globally."
             },
             {
                 "name": "AC Milan",
                 "image": "acmilan.png",
                 "tournament": "Serie A",
                 "country": "Italy",
-                "points": 79
+                "points": 79,
+                "info": "AC Milan, based in Milan, Italy, is one of the most storied and successful football clubs in history. Known for its iconic red and black stripes, AC Milan has a rich legacy of domestic and international achievements. The club's history includes numerous Serie A titles, Coppa Italia victories, and European successes, making it a true powerhouse that has left an indelible mark on the football world."
             },
 
             {
@@ -433,203 +526,232 @@
                 "image": "ajax.png",
                 "tournament": "Eredivisie",
                 "country": "Netherlands",
-                "points": 72
+                "points": 72,
+                "info": "Ajax Amsterdam, commonly referred to as Ajax, is a football club known for its renowned youth development system and attractive style of play. Based in Amsterdam, Netherlands, Ajax has a history of producing top-class players and achieving success both domestically and internationally. The club's emphasis on nurturing young talent and its commitment to attacking football have earned it a place among the footballing elite."
             },
             {
                 "name": "FC Porto",
                 "image": "porto.png",
                 "tournament": "Primeira Liga",
                 "country": "Portugal",
-                "points": 70
+                "points": 70,
+                "info": "FC Porto, located in Porto, Portugal, is a football club with a rich history of domestic and European triumphs. Known for its blue and white striped jerseys, FC Porto has consistently been a dominant force in the Primeira Liga. The club's successes include numerous league titles and a UEFA Champions League victory, reflecting its commitment to excellence and determination to compete at the highest level."
             },
             {
                 "name": "Real Madrid",
                 "image": "realmadrid.png",
                 "tournament": "La Liga",
                 "country": "Spain",
-                "points": 78
+                "points": 78,
+                "info": "Real Madrid, based in Madrid, Spain, is one of the most iconic and successful football clubs in the world. With its all-white kit and illustrious history, Real Madrid has secured numerous La Liga titles and an unmatched number of UEFA Champions League victories. The club's commitment to attracting top talent, playing attractive football, and achieving global recognition have solidified its status as a footballing institution."
             },
             {
                 "name": "Barcelona",
                 "image": "barcelona2.png",
                 "tournament": "La Liga",
                 "country": "Spain",
-                "points": 76
+                "points": 76,
+                "info": "FC Barcelona, renowned for its \"Blaugrana\" blue and red striped jerseys, is one of the most illustrious football clubs globally. Based in Barcelona, Spain, the club is known for its possession-based style of play, iconic players, and commitment to developing homegrown talent. Barcelona's historic successes in La Liga, as well as its multiple UEFA Champions League titles, highlight its legacy of excellence and its role in shaping the modern football landscape."
             },
             {
                 "name": "Atletico Madrid",
                 "image": "atleticomadrid.png",
                 "tournament": "La Liga",
                 "country": "Spain",
-                "points": 73
+                "points": 73,
+                "info": "Atletico Madrid, often referred to as \"Los Colchoneros,\" is a football club known for its tenacious defensive style and passionate fanbase. Based in Madrid, Spain, Atletico Madrid has established itself as a consistent contender in both domestic and international competitions. The club's determination, tactical prowess, and ability to challenge larger rivals have earned it respect in the football community."
             },
             {
                 "name": "Sevilla",
                 "image": "sevilla.png",
                 "tournament": "La Liga",
                 "country": "Spain",
-                "points": 68
+                "points": 68,
+                "info": "Sevilla FC, located in Seville, Spain, is a football club known for its impressive achievements in European competitions and its strong presence in La Liga. With a history of winning UEFA Europa League titles, Sevilla has shown its ability to perform on the continental stage. The club's commitment to attacking football and its status as a consistent competitor in both domestic and international arenas make it a formidable force in football."
             },
             {
                 "name": "Valencia",
                 "image": "valencia.png",
                 "tournament": "La Liga",
                 "country": "Spain",
-                "points": 61
+                "points": 61,
+                "info": "Valencia CF, based in Valencia, Spain, is a football club with a history of domestic and international success. Known for its vibrant fanbase and distinct orange jerseys, Valencia has celebrated La Liga titles and impressive runs in European competitions. The club's commitment to nurturing young talents and its contributions to the Spanish football landscape have solidified its position as a respected institution."
             },
             {
                 "name": "Real Sociedad",
                 "image": "realsociedad.png",
                 "tournament": "La Liga",
                 "country": "Spain",
-                "points": 57
+                "points": 57,
+                "info": "Real Sociedad, based in San Sebastián, Spain, is a football club with a rich history and a reputation for developing talented players. Known for its blue and white striped jerseys, Real Sociedad has enjoyed success in La Liga and has contributed to the development of Spanish football through its academy. The club's commitment to attractive football and its contributions to the national team make it a significant entity in Spanish football."
             },
             {
                 "name": "Villarreal",
                 "image": "villarreal.png",
                 "tournament": "La Liga",
                 "country": "Spain",
-                "points": 55
+                "points": 55,
+                "info": "Villarreal CF, based in Villarreal, Spain, is a football club known for its distinctive yellow jerseys and its presence in both domestic and international competitions. Villarreal has a history of participating in European competitions and has shown its ability to challenge established teams. The club's commitment to attacking football and its contributions to Spanish football have earned it a place of respect among fans and competitors."
             },
             {
                 "name": "Manchester United",
                 "image": "manutd.png",
                 "tournament": "Premier League",
                 "country": "England",
-                "points": 80
+                "points": 80,
+                "info": "Manchester United, also known as \"The Red Devils,\" is one of the most iconic football clubs globally. Based in Manchester, England, the club has a history of domestic and international successes, including multiple Premier League titles and UEFA Champions League triumphs. Manchester United's historic legacy, passionate fanbase, and dedication to playing attacking football have cemented its status as a footballing giant."
             },
             {
                 "name": "Manchester City",
                 "image": "mancity.png",
                 "tournament": "Premier League",
                 "country": "England",
-                "points": 82
+                "points": 82,
+                "info": "Manchester City, often referred to as \"City,\" is a football club based in Manchester, England. Known for its stylish and attacking brand of football, Manchester City has risen to prominence in both domestic and international competitions. The club's investments in top talent, commitment to nurturing young players, and attractive style of play have led to multiple Premier League titles and a place among the elite clubs in Europe."
             },
             {
                 "name": "Chelsea",
                 "image": "chelsea.png",
                 "tournament": "Premier League",
                 "country": "England",
-                "points": 78
+                "points": 78,
+                "info": "Chelsea FC, located in London, England, is a football club with a history of consistent success and a strong presence in both domestic and international competitions. The club's blue jerseys are synonymous with its passionate fanbase and its commitment to attacking football. Chelsea's achievements include Premier League titles, UEFA Champions League victories, and a focus on youth development, showcasing its dedication to excellence."
             },
             {
                 "name": "Liverpool",
                 "image": "liverpool2.png",
                 "tournament": "Premier League",
                 "country": "England",
-                "points": 75
+                "points": 75,
+                "info": "Liverpool Football Club, based in Liverpool, England, is synonymous with passionate fans and historic achievements. Known as \"The Reds,\" Liverpool has a storied legacy in English football, with a collection of league titles and European successes. The team's high-intensity pressing style, iconic anthem, and charismatic manager have contributed to its resurgence as a major force in both domestic and international competitions."
             },
             {
                 "name": "Tottenham Hotspur",
                 "image": "tottenham.png",
                 "tournament": "Premier League",
                 "country": "England",
-                "points": 72
+                "points": 72,
+                "info": "Tottenham Hotspur, commonly referred to as Spurs, is a football club based in London, England. Known for its rich history, White Hart Lane stadium, and passionate fanbase, Tottenham has a legacy of exciting football and competitive performances. The club's attacking style, strong roster of players, and iconic matches have contributed to its status as a respected and well-known entity in English football."
             },
             {
                 "name": "Arsenal",
                 "image": "arsenal.png",
                 "tournament": "Premier League",
                 "country": "England",
-                "points": 69
+                "points": 69,
+                "info": " Arsenal FC, located in London, England, is a football club with a storied history and a strong presence in both domestic and international competitions. Known as the \"Gunners,\" Arsenal has celebrated league titles, FA Cup victories, and a commitment to developing young talent. The club's distinct red and white jerseys, as well as its attractive style of play, have contributed to its reputation as a footballing institution."
             },
             {
                 "name": "Leicester City",
                 "image": "leicester.png",
                 "tournament": "Premier League",
                 "country": "England",
-                "points": 67
+                "points": 67,
+                "info": "Leicester City FC, based in Leicester, England, is a football club known for its remarkable Premier League triumph in the 2015-2016 season. The club's blue and white jerseys symbolize its achievements and its commitment to challenging the traditional hierarchy of English football. Leicester City's rise to prominence, attractive style of play, and emphasis on teamwork have made it an inspiration to football fans around the world."
             },
             {
                 "name": "Bayern Leverkusen",
                 "image": "leverkusen.png",
                 "tournament": "Bundesliga",
                 "country": "Germany",
-                "points": 69
+                "points": 69,
+                "info": "Bayer Leverkusen, based in Leverkusen, Germany, is a football club known for its competitive presence in the Bundesliga and its focus on youth development. The club's red and black jerseys reflect its determination and commitment to success. Bayer Leverkusen's ability to challenge top teams, develop talented players, and consistently perform at a high level in the Bundesliga have solidified its position in German football."
             },
             {
                 "name": "AS Roma",
                 "image": "roma.png",
                 "tournament": "Serie A",
                 "country": "Italy",
-                "points": 73
+                "points": 73,
+                "info": "AS Roma, based in Rome, Italy, is a football club with a passionate fanbase and a history of domestic and European successes. The club's maroon and orange jerseys are emblematic of its presence in Serie A. AS Roma's commitment to attacking football, memorable matches, and its role in Italian football history have made it a recognizable and respected name in the sport."
             },
             {
                 "name": "Paris FC",
                 "image": "parisfc.png",
                 "tournament": "Ligue 1",
                 "country": "France",
-                "points": 58
+                "points": 58,
+                "info": "Paris FC, based in Paris, France, is a football club that competes in Ligue 1. Known for its blue and red jerseys, the club represents the footballing spirit of the French capital. Paris FC's dedication to performing well in domestic competitions and its role in contributing to the vibrancy of French football make it an integral part of the football landscape in France."
             },
             {
                 "name": "Benfica",
                 "image": "benfica.png",
                 "tournament": "Primeira Liga",
                 "country": "Portugal",
-                "points": 66
+                "points": 66,
+                "info": "Sport Lisboa e Benfica, commonly known as Benfica, is a football club based in Lisbon, Portugal. Recognized for its red and white jerseys, the club has a rich history of domestic and international achievements. Benfica's strong presence in Primeira Liga, its passionate fanbase, and its contributions to Portuguese football showcase its significance in the sport."
             },
             {
                 "name": "Ajax",
                 "image": "ajax2.png",
                 "tournament": "Eredivisie",
                 "country": "Netherlands",
-                "points": 76
+                "points": 76,
+                "info": "AFC Ajax, located in Amsterdam, Netherlands, is a football club with a storied legacy in Dutch and European football. The club's white and red jerseys symbolize its historic accomplishments and dedication to playing attractive and attacking football. Ajax's commitment to developing youth talent, its renowned academy, and its multiple Eredivisie titles and European successes have solidified its position as a footballing powerhouse."
             },
             {
                 "name": "Borussia Dortmund",
                 "image": "dortmund.png",
                 "tournament": "Bundesliga",
                 "country": "Germany",
-                "points": 75
+                "points": 75,
+                "info": "Borussia Dortmund, based in Dortmund, Germany, is a football club known for its iconic yellow and black jerseys and its passionate fanbase. The club's commitment to attacking football, remarkable support, and competitive presence in Bundesliga and European competitions have made it a respected force in the football community."
             },
             {
                 "name": "Napoli",
                 "image": "napoli.png",
                 "tournament": "Serie A",
                 "country": "Italy",
-                "points": 71
+                "points": 71,
+                "info": "Società Sportiva Calcio Napoli, commonly referred to as Napoli, is a football club located in Naples, Italy. The club's blue and white jerseys reflect its strong identity and connection with the city. Napoli's achievements in Serie A, its passionate fanbase, and its role in shaping Italian football history make it a club of immense importance in the sport."
             },
             {
                 "name": "Everton",
                 "image": "everton.png",
                 "tournament": "Premier League",
                 "country": "England",
-                "points": 62
+                "points": 62,
+                "info": "Everton Football Club, based in Liverpool, England, is a football club with a rich history and a strong presence in English football. Known as the \"Toffees,\" the club's blue jerseys symbolize its commitment to competitiveness and success. Everton's historic achievements, dedicated fanbase, and contributions to English football have earned it a significant place in the football community."
             },
             {
                 "name": "Sevilla FC",
                 "image": "sevilla2.png",
                 "tournament": "La Liga",
                 "country": "Spain",
-                "points": 70
+                "points": 70,
+                "info": "Sevilla Fútbol Club, based in Seville, Spain, is a football club with a remarkable history and a strong presence in Spanish football. The club's white and red jerseys reflect its dedication to excellence and its achievements in both domestic and European competitions. Sevilla FC's consistent performances, multiple Europa League titles, and its role in Spanish football history make it a respected entity in the sport."
             },
             {
                 "name": "Aston Villa",
                 "image": "astonvilla.png",
                 "tournament": "Premier League",
                 "country": "England",
-                "points": 58
+                "points": 58,
+                "info": "Aston Villa Football Club, based in Birmingham, England, is a football club with a storied history and a presence in English football. The club's iconic claret and blue jerseys represent its identity and contributions to the sport. Aston Villa's memorable moments, league titles, and its integral role in shaping the English football landscape make it a recognized and respected name."
             },
             {
                 "name": "Inter Milan",
                 "image": "intermilan.png",
                 "tournament": "Premier League",
                 "country": "Serie A",
-                "points": 60
+                "points": 60,
+                "info": ": Football Club Internazionale Milano, commonly known as Inter Milan, is a football club based in Milan, Italy. The club's blue and black jerseys symbolize its history, rivalry, and achievements in Serie A and international competitions. Inter Milan's successes, iconic players, and contributions to Italian football have earned it a place of significance in the global football community."
             },
             {
                 "name": "AS Monaco",
                 "image": "asmonaco.png",
                 "tournament": "Ligue 1",
                 "country": "Serie A",
-                "points": 65
+                "points": 65,
+                "info": "Association Sportive de Monaco Football Club, commonly referred to as AS Monaco, is a football club located in Monaco. The club's red and white jerseys represent its identity and competitive spirit. AS Monaco's successes in Ligue 1 and European competitions, as well as its role in developing young talent, have solidified its position as a prominent name in French football."
             },
             {
                 "name": "PSV Eindhoven",
                 "image": "psveindhoven.png",
                 "tournament": "Eredivisie",
                 "country": "Netherlands",
-                "points": 80
+                "points": 80,
+                "info": "PSV Eindhoven, often referred to as PSV, is a renowned football club based in Eindhoven, Netherlands. With its iconic red and white jerseys, the club has established itself as a dominant force in Dutch football. Founded in 1913, PSV has a rich history of success, both domestically and on the European stage."
             }
             
         
@@ -723,7 +845,7 @@
             "time": "2023-09-02 19:15",
             "tournament": "Serie A",
             "logo1": "acmilan.png",
-            "logo2":"Juventus"
+            "logo2":"Juventus.png"
         },
         {
             "team1": "Chelsea",
@@ -804,7 +926,7 @@
                 "time": "2023-09-25 19:00",
                 "tournament": "La Liga",
                 "logo1": "sevilla.png",
-                "logo2": "Barcelona"
+                "logo2": "barcelona.png"
             },
             {
                 "team1": "AS Monaco",
