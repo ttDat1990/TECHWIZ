@@ -1,0 +1,28 @@
+.fback-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    div{
+        width: 60px;
+        margin-bottom: 10px;
+        input, textarea{
+            outline: none;
+            padding: 10px;
+        }
+    }
+}
+
+.form-feedback{
+    div{
+       a{
+        margin-left: 400px;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+        padding: 5px 15px 5px 15px;
+        &:hover{
+            color: var(--primary-color);
+        background-color: var(--white-color);
+        }
+       }
+    }
+}

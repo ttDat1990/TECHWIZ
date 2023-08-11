@@ -57,9 +57,9 @@
     width: 22%;
     height: 400px;
     overflow: hidden;
-    box-shadow: 5px 15px 30px #888888;
     transition: transform .2s;
     margin-bottom: 50px;
+    opacity: 0;
 
     // &:hover .card-image {
     //     transform: scale(1.05);
@@ -75,6 +75,7 @@
 
     &:hover {
         transform: scale(1.05);
+        box-shadow: 5px 15px 30px #888888;
     }
 
     .card-image {
@@ -150,7 +151,7 @@
 
 //list player dropdown
 .dropdown-find-player{
-    z-index: 999!important;
+    z-index: 100!important;
     .dropdown-menu {
         background-color: var(--white-color);
         position: absolute;
@@ -173,11 +174,12 @@
     }
     .nav-link{
         font-size: var(--font-size-big);
-        padding: 10px;
+        padding: 10px 20px 10px 20px;
         background-color: var(--primary-color);
         border: 1px solid var(--primary-color);
         &:hover{
             background-color: var(--white-color);
+            border: var(--white-color);
         }
     }
 }

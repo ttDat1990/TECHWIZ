@@ -3,13 +3,15 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.match-result, .match-schedule {
+.match-result,
+.match-schedule {
   width: 100%;
   text-align: center;
   padding-bottom: 40px;
 }
 
-.team1, .team2 {
+.team1,
+.team2 {
   display: flex;
   align-items: center;
 }
@@ -34,6 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
 }
 
 .match-title {
@@ -100,4 +103,12 @@
   font-weight: 500;
   margin: 0 10px;
   text-shadow: 0.2px 0 #000000, -0.2px 0 #000000, 0 0.2px #000000, 0 -0.2px #000000, 0.1px 0.1px #000000, -0.1px -1px #000000, 0.1px -0.1px #000000, -0.1px 0.1px #000000;
+}
+
+.match-item {
+  transition: transform 0.3s ease;
+}
+
+.match-item:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=mathches.css.map */

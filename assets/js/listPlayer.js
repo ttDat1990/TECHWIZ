@@ -1,4 +1,4 @@
-//first load 
+//first load contact-wrapper
 var loadPlayer = function (event) {
     event.preventDefault();
 
@@ -13,6 +13,9 @@ var loadPlayer = function (event) {
 
     var matchWrapper = document.getElementById("matchWrapper");
     matchWrapper.innerHTML = '';
+
+    var contactWrapper = document.getElementById("contactWrapper");
+    contactWrapper.innerHTML = '';
 
     let cardContainer = document.querySelector('#cardWrapper');
     cardContainer.className = 'padding100';
@@ -29,19 +32,19 @@ var loadPlayer = function (event) {
                                         <div class="nav-link">Search</div>
                                         <div class="dropdown-menu dropdown-search">
                                             <div class="search-input-wrapper" style="flex: 0;">                                       
-                                                <input class="search-input" id="search-input1" type="text" placeholder="Search player by name">
+                                                <input class="search-input del-val" id="search-input1" type="text" placeholder="Search player by name">
                                                 <button class="search-button" id="listPlayer1">Search</button>
                                             </div>
                                             <div class="search-input-wrapper" style="flex: 0;">                                       
-                                                <input class="search-input" id="search-input2" type="text" placeholder="Search player by nationality">
+                                                <input class="search-input del-val" id="search-input2" type="text" placeholder="Search player by nationality">
                                                 <button class="search-button" id="listPlayer2">Search</button>
                                             </div>
                                             <div class="search-input-wrapper" style="flex: 0;">                                       
-                                                <input class="search-input" id="search-input3" type="text" placeholder="Search player by club">
+                                                <input class="search-input del-val" id="search-input3" type="text" placeholder="Search player by club">
                                                 <button class="search-button" id="listPlayer3">Search</button>
                                             </div>
                                             <div class="search-input-wrapper" style="flex: 0;">                                       
-                                                <input class="search-input" id="search-input4" type="text" placeholder="Search player by position">
+                                                <input class="search-input del-val" id="search-input4" type="text" placeholder="Search player by position">
                                                 <button class="search-button" id="listPlayer4">Search</button>
                                             </div>
                                         </div>
@@ -53,6 +56,17 @@ var loadPlayer = function (event) {
                             </div>                                                              
                             `;
     cardContainer.appendChild(playerContainer);
+    //delete value of not-focus input
+    var delVal = document.querySelectorAll('.del-val');
+    for (var i = 0; i < delVal.length; i++) {
+        delVal[i].addEventListener('focus', function () {
+            for (var j = 0; j < delVal.length; j++) {
+                if (delVal[j] !== this) {
+                    delVal[j].value = '';
+                }
+            }
+        });
+    }
 
     fetch('./data/data.json')
         .then(response => response.json())
@@ -60,7 +74,7 @@ var loadPlayer = function (event) {
 
             data.players.forEach(item => {
                 let card = document.createElement('a');
-                card.classList.add('card','card3-res');
+                card.classList.add('card', 'card3-res');
                 card.innerHTML = `                                                                                                            
                                 <div class="card-image">
                                     <img src="./assets/images/${item.image}" alt="${item.image}">
@@ -76,7 +90,37 @@ var loadPlayer = function (event) {
                 let cardContainer1 = document.querySelector('#card-container');
                 cardContainer1.appendChild(card);
             });
+
+            //set animation in scroll
+            const cards = document.querySelectorAll('.card');
+            const observedElements = new Set();
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (!observedElements.has(entry.target)) {
+                            entry.target.classList.add('animate__animated', 'animate__fadeInDown');
+                            observedElements.add(entry.target);
+                        }
+                    } else {
+                        observedElements.delete(entry.target);
+                        entry.target.classList.remove('animate__animated', 'animate__fadeInDown');
+                    }
+                });
+            }, {
+                threshold: [0],
+                rootMargin: '30% 0px 0px 0px' // top-r-b-L
+            });
+
+            cards.forEach(card => observer.observe(card));
+
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+
         });
+
+
 
     //Loading data search by name
     const loadDataSearch = () => {
@@ -95,7 +139,7 @@ var loadPlayer = function (event) {
                 cardContainer.innerHTML = '';
                 filteredData.forEach(item => {
                     let card = document.createElement('a');
-                    card.classList.add('card','card3-res');
+                    card.classList.add('card', 'card3-res');
                     card.innerHTML = `
                                     <div class="card-image">
                                     <img src="./assets/images/${item.image}" alt="${item.image}">
@@ -110,6 +154,29 @@ var loadPlayer = function (event) {
                                 `;
                     cardContainer.appendChild(card);
                 });
+
+                 //set animation in scroll
+            const cards = document.querySelectorAll('.card');
+            const observedElements = new Set();
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (!observedElements.has(entry.target)) {
+                            entry.target.classList.add('animate__animated', 'animate__fadeInDown');
+                            observedElements.add(entry.target);
+                        }
+                    } else {
+                        observedElements.delete(entry.target);
+                        entry.target.classList.remove('animate__animated', 'animate__fadeInDown');
+                    }
+                });
+            }, {
+                threshold: [0],
+                rootMargin: '30% 0px 0px 0px' // top-r-b-L
+            });
+
+            cards.forEach(card => observer.observe(card));
             });
     }
     //Click search -> Loading data search
@@ -148,6 +215,29 @@ var loadPlayer = function (event) {
                                 `;
                     cardContainer.appendChild(card);
                 });
+
+                 //set animation in scroll
+            const cards = document.querySelectorAll('.card');
+            const observedElements = new Set();
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (!observedElements.has(entry.target)) {
+                            entry.target.classList.add('animate__animated', 'animate__fadeInDown');
+                            observedElements.add(entry.target);
+                        }
+                    } else {
+                        observedElements.delete(entry.target);
+                        entry.target.classList.remove('animate__animated', 'animate__fadeInDown');
+                    }
+                });
+            }, {
+                threshold: [0],
+                rootMargin: '30% 0px 0px 0px' // top-r-b-L
+            });
+
+            cards.forEach(card => observer.observe(card));
             });
     }
     //Click search -> Loading data search
@@ -186,6 +276,29 @@ var loadPlayer = function (event) {
                                 `;
                     cardContainer.appendChild(card);
                 });
+
+                 //set animation in scroll
+            const cards = document.querySelectorAll('.card');
+            const observedElements = new Set();
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (!observedElements.has(entry.target)) {
+                            entry.target.classList.add('animate__animated', 'animate__fadeInDown');
+                            observedElements.add(entry.target);
+                        }
+                    } else {
+                        observedElements.delete(entry.target);
+                        entry.target.classList.remove('animate__animated', 'animate__fadeInDown');
+                    }
+                });
+            }, {
+                threshold: [0],
+                rootMargin: '30% 0px 0px 0px' // top-r-b-L
+            });
+
+            cards.forEach(card => observer.observe(card));
             });
 
     }
@@ -226,11 +339,36 @@ var loadPlayer = function (event) {
                             `;
                     cardContainer.appendChild(card);
                 });
+
+                 //set animation in scroll
+            const cards = document.querySelectorAll('.card');
+            const observedElements = new Set();
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (!observedElements.has(entry.target)) {
+                            entry.target.classList.add('animate__animated', 'animate__fadeInDown');
+                            observedElements.add(entry.target);
+                        }
+                    } else {
+                        observedElements.delete(entry.target);
+                        entry.target.classList.remove('animate__animated', 'animate__fadeInDown');
+                    }
+                });
+            }, {
+                threshold: [0],
+                rootMargin: '30% 0px 0px 0px' // top-r-b-L
+            });
+
+            cards.forEach(card => observer.observe(card));
             });
     }
     //Click search -> Loading data search
     let searchButton5 = document.querySelector('#listPlayer4');
     searchButton5.addEventListener('click', loadDataSearchPos);
+
+
 };
 
 // Click Player Galleries -> load player

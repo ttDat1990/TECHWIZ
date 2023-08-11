@@ -226,6 +226,56 @@ window.onload = function () {
                     cardContainer1.appendChild(matchItem);
                 }
             });
+
+             //set animation in scroll
+             const matchItem = document.querySelectorAll('.match-item');
+             const matchTitle = document.querySelectorAll('.match-title');
+             const observedElements = new Set();
+ 
+             const observer = new IntersectionObserver(entries => {
+                 entries.forEach(entry => {
+                     if (entry.isIntersecting) {
+                         if (!observedElements.has(entry.target)) {
+                             entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+                             observedElements.add(entry.target);
+                         }
+                     } else {
+                         observedElements.delete(entry.target);
+                         entry.target.classList.remove('animate__animated', 'animate__fadeInRight');
+                     }
+                 });
+             }, {
+                 threshold: [0],
+                 rootMargin: '30% 0px 0px 0px' // top-r-b-L
+             });
+ 
+             matchItem.forEach(matchItem => observer.observe(matchItem));
+             matchTitle.forEach(matchTitle => observer.observe(matchTitle));
+
+             //set animation in scroll list-title-wrapper
+            const cards = document.querySelectorAll('.card');
+            const listTitleWrapper = document.querySelectorAll('.list-title-wrapper');
+            const observedElements1 = new Set();
+
+            const observer1 = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (!observedElements1.has(entry.target)) {
+                            entry.target.classList.add('animate__animated', 'animate__fadeInDown');
+                            observedElements1.add(entry.target);
+                        }
+                    } else {
+                        observedElements1.delete(entry.target);
+                        entry.target.classList.remove('animate__animated', 'animate__fadeInDown');
+                    }
+                });
+            }, {
+                threshold: [0],
+                rootMargin: '30% 0px 0px 0px' // top-r-b-L
+            });
+
+            cards.forEach(card => observer1.observe(card));
+            listTitleWrapper.forEach(listTitleWrapper => observer1.observe(listTitleWrapper));
         });
 
     // Click find all player -> load player

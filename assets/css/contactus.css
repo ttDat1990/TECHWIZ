@@ -1,0 +1,34 @@
+#contactGrid {
+  margin-top: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#contactGrid .list-title {
+  padding: 30px 30px 0 30px;
+}
+#contactGrid .contact-container {
+  padding: 30px 30px;
+}
+
+.parag-1 h2 {
+  font-size: var(--font-size-big);
+  color: var(--white-color);
+  text-shadow: 0.2px 0 #000000, -0.2px 0 #000000, 0 0.2px #000000, 0 -0.2px #000000, 0.1px 0.1px #000000, -0.1px -1px #000000, 0.1px -0.1px #000000, -0.1px 0.1px #000000;
+  color: var(--primary-color);
+}
+.parag-1 p, .parag-1 ul, .parag-1 a {
+  font-size: var(--font-size-normal);
+  color: var(--white-color);
+  text-shadow: 0.2px 0 #000000, -0.2px 0 #000000, 0 0.2px #000000, 0 -0.2px #000000, 0.1px 0.1px #000000, -0.1px -1px #000000, 0.1px -0.1px #000000, -0.1px 0.1px #000000;
+  line-height: normal;
+  text-decoration: none;
+}
+.parag-1 a:hover {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+.parag-1 a {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  padding: 5px;
+}/*# sourceMappingURL=contactus.css.map */

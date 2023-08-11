@@ -1,0 +1,43 @@
+#contactGrid{
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .list-title{
+        padding: 30px 30px 0 30px;
+    }
+
+    .contact-container{
+        padding: 30px 30px;
+    }
+}
+
+.parag-1{
+    h2{
+        font-size: var(--font-size-big);
+        color: var(--white-color);
+        text-shadow: .2px 0 #000000, -.2px 0 #000000, 0 .2px #000000, 0 -.2px #000000,
+             .1px .1px #000000, -.1px -1px #000000, .1px -.1px #000000, -.1px .1px #000000;
+        color: var(--primary-color);
+    }
+
+    p, ul, a{
+        font-size: var(--font-size-normal);
+        color: var(--white-color);
+        text-shadow: .2px 0 #000000, -.2px 0 #000000, 0 .2px #000000, 0 -.2px #000000,
+             .1px .1px #000000, -.1px -1px #000000, .1px -.1px #000000, -.1px .1px #000000;
+             line-height: normal;
+        text-decoration: none;
+    }
+    & a:hover{
+        color: var(--primary-color);
+        background-color: var(--white-color);
+        border: 1px solid var(--white-color);
+    }
+
+    a{
+        border: 1px solid var(--primary-color);
+        background-color: var(--primary-color);
+        padding: 5px;
+    }
+    
+}
