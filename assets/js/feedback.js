@@ -19,11 +19,11 @@ var loadFeedback = function (event) {
 
     var contactWrapper = document.getElementById("contactWrapper");
     var contactGrid = document.createElement('div');
-    contactGrid.className = 'grid';
+    contactGrid.classList.add('grid', 'animate__animated', 'animate__fadeInDown');
     contactGrid.id = 'contactGrid';
     contactGrid.innerHTML = ` 
-                            <div class="list-title">Feedback</div>                                   
-                            <div class="contact-container">
+                            <div class="list-title animate__animated animate__fadeInLeft animate__delay-1s">Feedback</div>                                   
+                            <div class="contact-container animate__animated animate__fadeInDown animate__delay-1s">
                                 <div class="parag-1">
                                     <p>
                                     Thank you for visiting our website! We are dedicated to providing the latest updates and information on soccer matches, players, and teams. We value your feedback and would love to hear your thoughts on our website and content.

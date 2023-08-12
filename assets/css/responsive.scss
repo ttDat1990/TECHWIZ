@@ -54,11 +54,9 @@
         top: 15%;
     }
 
-    .navbar-brand,
-    .z-index1 {
+    .nav-end {
         display: none;
     }
-
     .main-nav-container {
         margin-top: 0;
     }
@@ -139,9 +137,7 @@
         font-size: var(--font-size-small);
     }
     
-    .nav-end {
-        display: none;
-    }
+    
 
     .navbar{
         display: flex;
@@ -277,6 +273,13 @@
 
     .custom-navbar-collapse.show {
         display: block;
+    }
+    .custom-main-nav-container{
+        display: block;
+        top: -263px;
+    }
+    .match-wrapper{
+        margin-top: -53px;
     }
 }
 

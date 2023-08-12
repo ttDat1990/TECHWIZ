@@ -1,14 +1,11 @@
 //list card
-.card-wrapper,.card-wrapper1{
+.card-wrapper,
+.card-wrapper1 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.padding100{
+.padding100 {
     padding-top: 150px;
-}
-
-.player-container,.tournament-container {
-
 }
 
 .list-title-wrapper {
@@ -18,20 +15,22 @@
     align-items: center;
     height: 80px;
     margin-bottom: 50px;
-    
+
 }
 
 .list-title {
-    
+
     text-shadow: 0.03em 0.03em 0 var(--white-color);
     font-size: 4rem;
     font-weight: 700;
     transition: all 0.3s ease-in-out;
     color: var(--primary-color);
     padding-left: 10px;
+
     &:hover {
         color: var(--btn-hover-background-color) !important;
     }
+
     cursor:default;
 }
 
@@ -42,13 +41,13 @@
     flex-wrap: wrap;
 }
 
-.cardWide{
-    width: 100%!important;
-    height: 200px!important;
+.cardWide {
+    width: 100% !important;
+    height: 200px !important;
 }
 
-.card5{
-    width: 18%!important;
+.card5 {
+    width: 18% !important;
 }
 
 .card {
@@ -61,15 +60,11 @@
     margin-bottom: 50px;
     opacity: 0;
 
-    // &:hover .card-image {
-    //     transform: scale(1.05);
-    // }
-
     &:hover .card-content {
         transform: translateY(-5px);
     }
 
-    &:hover .card-logo{
+    &:hover .card-logo {
         transform: translateY(5px);
     }
 
@@ -87,7 +82,7 @@
         &:hover {
             .card-content {
                 transform: translateY(30px);
-            }          
+            }
         }
 
         img {
@@ -143,25 +138,29 @@
         color: var(--white-color);
         font-weight: 500;
     }
-    .card-logo, .card-content-title, .card-content-des{
+
+    .card-logo,
+    .card-content-title,
+    .card-content-des {
         text-shadow: .2px 0 #000000, -.2px 0 #000000, 0 .2px #000000, 0 -.2px #000000,
-             .1px .1px #000000, -.1px -1px #000000, .1px -.1px #000000, -.1px .1px #000000;
+            .1px .1px #000000, -.1px -1px #000000, .1px -.1px #000000, -.1px .1px #000000;
     }
 }
 
 //list player dropdown
-.dropdown-find-player{
-    z-index: 100!important;
+.dropdown-find-player {
+    z-index: 900 !important;
+
     .dropdown-menu {
         background-color: var(--white-color);
         position: absolute;
         top: 30x;
         left: -200px;
 
-        .search-input-wrapper{
+        .search-input-wrapper {
             margin-bottom: 10px;
         }
-    
+
         &::after {
             content: "";
             display: block;
@@ -172,12 +171,14 @@
             height: 13px;
         }
     }
-    .nav-link{
+
+    .nav-link {
         font-size: var(--font-size-big);
         padding: 10px 20px 10px 20px;
         background-color: var(--primary-color);
         border: 1px solid var(--primary-color);
-        &:hover{
+
+        &:hover {
             background-color: var(--white-color);
             border: var(--white-color);
         }

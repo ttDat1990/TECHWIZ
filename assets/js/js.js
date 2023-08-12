@@ -114,13 +114,9 @@ $('#login').click(function () {
 })();
 
 //animated when scroll
-
-
 document.addEventListener('DOMContentLoaded', function () {
-    // Lấy tất cả các phần tử có class name "card"
     var cardElements = document.querySelectorAll('.card');
 
-    // Hàm kiểm tra xem một phần tử có trong tầm nhìn không
     function isElementInViewport(element) {
         var rect = element.getBoundingClientRect();
         return (
@@ -131,21 +127,16 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     }
 
-    // Hàm xử lý khi cuộn trang
     function handleScroll() {
         cardElements.forEach(function (card) {
             if (isElementInViewport(card)) {
-                card.classList.add('animate__animated', 'animate__fadeInDown'); // Thêm class "visible" vào các thẻ có trong tầm nhìn
-            } else {
-                card.classList.remove('animate__animated', 'animate__fadeInDown'); // Loại bỏ class "visible" khỏi các thẻ không trong tầm nhìn
+                card.classList.add('animate__animated', 'animate__fadeInDown'); 
+                card.classList.remove('animate__animated', 'animate__fadeInDown'); 
             }
         });
     }
 
-    // Gắn sự kiện cuộn trang để gọi hàm xử lý
     window.addEventListener('scroll', handleScroll);
-
-    // Gọi hàm một lần ban đầu để kiểm tra các thẻ đã có trong tầm nhìn khi trang tải
     handleScroll();
 });
 

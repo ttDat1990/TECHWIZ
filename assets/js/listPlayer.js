@@ -25,7 +25,7 @@ var loadPlayer = function (event) {
     playerContainer.innerHTML = `                                    
                             <div class="grid">
                                 <div class="list-title-wrapper">
-                                    <div class="list-title">
+                                    <div class="list-title animate__animated animate__fadeInLeft animate__delay-1s">
                                         Best Player
                                     </div>
                                     <div class="nav-item dropdown dropdown-find-player">

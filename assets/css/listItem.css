@@ -1,4 +1,5 @@
-.card-wrapper, .card-wrapper1 {
+.card-wrapper,
+.card-wrapper1 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -119,12 +120,14 @@
   color: var(--white-color);
   font-weight: 500;
 }
-.card .card-logo, .card .card-content-title, .card .card-content-des {
+.card .card-logo,
+.card .card-content-title,
+.card .card-content-des {
   text-shadow: 0.2px 0 #000000, -0.2px 0 #000000, 0 0.2px #000000, 0 -0.2px #000000, 0.1px 0.1px #000000, -0.1px -1px #000000, 0.1px -0.1px #000000, -0.1px 0.1px #000000;
 }
 
 .dropdown-find-player {
-  z-index: 100 !important;
+  z-index: 900 !important;
 }
 .dropdown-find-player .dropdown-menu {
   background-color: var(--white-color);

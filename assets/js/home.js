@@ -250,7 +250,6 @@ window.onload = function () {
              });
  
              matchItem.forEach(matchItem => observer.observe(matchItem));
-             //matchTitle.forEach(matchTitle => observer.observe(matchTitle));
 
              //set animation in scroll list-title-wrapper
             const cards = document.querySelectorAll('.card');
